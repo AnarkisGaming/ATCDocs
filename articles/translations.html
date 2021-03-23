@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Translations - After the Collapse Modding Documentation</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Translations ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/icon.png" height="48">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="translations">Translations</h1>
+
+<p>Thanks for volunteering to create a community localization of After the
+Collapse! Translations are created and applied using the modding system. This
+guide will get you set up and ready to translate.</p>
+<p>If your language uses more than the characters in the Unicode extended Latin
+layout, please contact us <a href="https://discord.gg/anarkis">on Discord</a>, the
+<a href="https://steamcommunity.com/app/727570/discussions">Steam Community forums</a>, or
+via email at alex at anarkisgaming dot com so we can make sure the game can
+render your language.</p>
+<p>Please note that due to technical limitations, we are unable to add support for
+Chinese, Japanese, or Korean at this time (I plan on fixing this, no ETA).</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>You'll need:</p>
+<ul>
+<li>A GNU Gettext PO editor, like <a href="https://poedit.net/">POEdit</a></li>
+<li>A text editor, like Notepad or <a href="https://notepad-plus-plus.org">Notepad++</a></li>
+<li>A copy of After the Collapse</li>
+</ul>
+<h2 id="creating-your-mod">Creating your mod</h2>
+<ol>
+<li>Open After the Collapse and click on &quot;Mods&quot; at the main menu. Then click
+&quot;Create from Template&quot;, in the left pane.</li>
+</ol>
+<p><img src="/images/translation_from_template.png" alt="Create translation from template"></p>
+<ol start="2">
+<li><p>Open the game's folder. If you use Steam, find the game in your Library,
+right-click it, then click Properties, Local Files, and then Browse Local
+Files. Then click on the <code>mods</code> folder, the mod you just created.</p>
+</li>
+<li><p>Open config.json in your text editor and edit as appropriate. You might want
+to use the following as an example:</p>
+</li>
+</ol>
+<pre><code class="lang-json">{
+  &quot;name&quot;: &quot;Español (Latinoamérica)&quot;,
+  &quot;author&quot;: &quot;Alexandra (antigravities)&quot;,
+  &quot;description&quot;: &quot;This mod localizes the game into Spanish (Latin America). / Este mod localiza el juego a Español (Latinoamérica).&quot;,
+  &quot;version&quot;: 1.0
+}
+</code></pre>
+<h2 id="translating-the-user-interface">Translating the user interface</h2>
+<ol>
+<li><p>Open the StalkerRL.pot file in the mod folder you just created using your
+Gettext editor (i.e. POEdit).</p>
+</li>
+<li><p>Make your translations, and then save the resulting PO file into the
+<code>files/lang</code> folder within your mod's folder, named the
+<a href="https://www.csharp-examples.net/culture-names/">culture code</a> of the language
+you would like to edit. POEditor should automatically compile the file to a
+<code>.mo</code> file when it is saved.</p>
+</li>
+<li><p>Relaunch After the Collapse. Your language should appear in the list in the
+Options menu.</p>
+</li>
+</ol>
+<h2 id="updating-translation-strings">Updating translation strings</h2>
+<p>How you update the translation list is dependent on your Gettext editor. If
+you're using POEdit, the catalog can be updated by selecting Catalog from the
+menu bar, and then Update from Catalog. Then, in the Open window, go to the
+game's directory, go to the <code>lang</code> folder, and select <code>StalkerRL.pot</code>.</p>
+<h2 id="translating-game-objects-items-npc">Translating game objects, items, npc..</h2>
+<p>This is done on a per file basis. You have to mirror the game's data structure
+in your mod. Let's suppose you want to translate the Crafting Station. In the base
+game, it's located in <code>data/clutter/</code> and the file is <code>craft_craftstation.json</code></p>
+<p>Translation files use the same file name, but the extension (.json) becomes the country
+code. If you were to translate the game in spanish, you'd need to create a
+<code>craft_craftstation.es</code> file with the following content:</p>
+<pre><code class="lang-json">{
+  &quot;Name&quot;: &quot;Estación de artesanía&quot;,
+  &quot;Desc&quot;: &quot;Aquí se pueden producir herramientas y armas básicas&quot;
+}
+</code></pre>
+<p>Save that file in <code>yourmod/files/data/clutter/</code>.</p>
+<h2 id="file-formats-and-character-sets">File formats and character sets</h2>
+<p>After The Collapse supports the Latin and standard Cyrillic character sets.</p>
+<ul>
+<li>Latin translation files (for game items/objects) should be encoded in UTF-8</li>
+<li>Cyrillic translation files (for game items/objects) should be encoded in UTF-8-BOM</li>
+</ul>
+<p>**Also note that the letter case for folders, file names and content matter.</p>
+<h2 id="working-example">Working Example</h2>
+<p>Since version 0.8, a working example to get you started is available in the
+game's folder. Look for the <code>mod_examples/example-translation</code> folder.</p>
+<h2 id="getting-more-help">Getting more help</h2>
+<p>If you need any help, please don't hesitate to contact us
+<a href="https://discord.gg/anarkis">on Discord</a>, the
+<a href="https://steamcommunity.com/app/727570/discussions">Steam Community forums</a>, or
+via email at alex at anarkisgaming dot com.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>&copy; 2020 <a href="https://www.anarkisgaming.com/">Anarkis Gaming</a>. All rights reserved. Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

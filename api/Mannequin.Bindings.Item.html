@@ -1,0 +1,562 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Item
+   - After the Collapse Modding Documentation</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Item
+   ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/icon.png" height="48">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mannequin.Bindings.Item">
+  
+  
+  <h1 id="Mannequin_Bindings_Item" data-uid="Mannequin.Bindings.Item" class="text-break">Class Item
+  </h1>
+  <div class="markdown level0 summary"><p>Represents in-game items.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Item</span></div>
+      <div class="level2"><a class="xref" href="Mannequin.Bindings.Equippable.html">Equippable</a></div>
+      <div class="level2"><a class="xref" href="Mannequin.Bindings.Tech.html">Tech</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mannequin.Bindings.html">Mannequin.Bindings</a></h6>
+  <h6><strong>Assembly</strong>: Collapse.dll</h6>
+  <h5 id="Mannequin_Bindings_Item_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Item : object</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Mannequin_Bindings_Item__ctor_" data-uid="Mannequin.Bindings.Item.#ctor*"></a>
+  <h4 id="Mannequin_Bindings_Item__ctor_Mannequin_Bindings_EItemType_System_String_" data-uid="Mannequin.Bindings.Item.#ctor(Mannequin.Bindings.EItemType,System.String)">Item(EItemType, String)</h4>
+  <div class="markdown level1 summary"><p>Get an item by its asset name and type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Item(EItemType type, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.EItemType.html">EItemType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type of item this is</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The asset name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Mannequin_Bindings_Item_AvailableOnStartMenu_" data-uid="Mannequin.Bindings.Item.AvailableOnStartMenu*"></a>
+  <h4 id="Mannequin_Bindings_Item_AvailableOnStartMenu" data-uid="Mannequin.Bindings.Item.AvailableOnStartMenu">AvailableOnStartMenu</h4>
+  <div class="markdown level1 summary"><p>Whether this item is selectable from the starty menu or not</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AvailableOnStartMenu { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Item_CanDrop_" data-uid="Mannequin.Bindings.Item.CanDrop*"></a>
+  <h4 id="Mannequin_Bindings_Item_CanDrop" data-uid="Mannequin.Bindings.Item.CanDrop">CanDrop</h4>
+  <div class="markdown level1 summary"><p>Whether this item can be dropped or not</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanDrop { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Item_Description_" data-uid="Mannequin.Bindings.Item.Description*"></a>
+  <h4 id="Mannequin_Bindings_Item_Description" data-uid="Mannequin.Bindings.Item.Description">Description</h4>
+  <div class="markdown level1 summary"><p>The item's descripton</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Item_ID_" data-uid="Mannequin.Bindings.Item.ID*"></a>
+  <h4 id="Mannequin_Bindings_Item_ID" data-uid="Mannequin.Bindings.Item.ID">ID</h4>
+  <div class="markdown level1 summary"><p>The ID (unique name) of this item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ID { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Item_InventoryTexture_" data-uid="Mannequin.Bindings.Item.InventoryTexture*"></a>
+  <h4 id="Mannequin_Bindings_Item_InventoryTexture" data-uid="Mannequin.Bindings.Item.InventoryTexture">InventoryTexture</h4>
+  <div class="markdown level1 summary"><p>The item's inventory texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture InventoryTexture { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Texture.html">Texture</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Item_IsCloned_" data-uid="Mannequin.Bindings.Item.IsCloned*"></a>
+  <h4 id="Mannequin_Bindings_Item_IsCloned" data-uid="Mannequin.Bindings.Item.IsCloned">IsCloned</h4>
+  <div class="markdown level1 summary"><p>Whether this item is a clone or not</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCloned { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Item_IsStackable_" data-uid="Mannequin.Bindings.Item.IsStackable*"></a>
+  <h4 id="Mannequin_Bindings_Item_IsStackable" data-uid="Mannequin.Bindings.Item.IsStackable">IsStackable</h4>
+  <div class="markdown level1 summary"><p>Whether this item can be stacked or not</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsStackable { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Item_Name_" data-uid="Mannequin.Bindings.Item.Name*"></a>
+  <h4 id="Mannequin_Bindings_Item_Name" data-uid="Mannequin.Bindings.Item.Name">Name</h4>
+  <div class="markdown level1 summary"><p>The item's name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Item_Type_" data-uid="Mannequin.Bindings.Item.Type*"></a>
+  <h4 id="Mannequin_Bindings_Item_Type" data-uid="Mannequin.Bindings.Item.Type">Type</h4>
+  <div class="markdown level1 summary"><p>The item's <a class="xref" href="Mannequin.Bindings.EItemType.html">EItemType</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EItemType Type { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.EItemType.html">EItemType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Mannequin_Bindings_Item_AddTag_" data-uid="Mannequin.Bindings.Item.AddTag*"></a>
+  <h4 id="Mannequin_Bindings_Item_AddTag_Mannequin_Bindings_EItemTag_" data-uid="Mannequin.Bindings.Item.AddTag(Mannequin.Bindings.EItemTag)">AddTag(EItemTag)</h4>
+  <div class="markdown level1 summary"><p>Add a tag to this item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTag(EItemTag tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.EItemTag.html">EItemTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>The tag to add</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Item_AddToGame_" data-uid="Mannequin.Bindings.Item.AddToGame*"></a>
+  <h4 id="Mannequin_Bindings_Item_AddToGame_System_String_" data-uid="Mannequin.Bindings.Item.AddToGame(System.String)">AddToGame(String)</h4>
+  <div class="markdown level1 summary"><p>Add this item to the game.</p>
+<div class="NOTE"><h5>alert</h5><p>
+The item must be cloned first (if you&apos;re adding a new item to the game, you should clone it first anyway)
+</p></div>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddToGame(string asName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">asName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Item_Clone_" data-uid="Mannequin.Bindings.Item.Clone*"></a>
+  <h4 id="Mannequin_Bindings_Item_Clone" data-uid="Mannequin.Bindings.Item.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Clone this item, allowing you to save modifications as a new Item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Item Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Item.html">Item</a></td>
+        <td><p>The cloned Item</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Item_HasTag_" data-uid="Mannequin.Bindings.Item.HasTag*"></a>
+  <h4 id="Mannequin_Bindings_Item_HasTag_Mannequin_Bindings_EItemTag_" data-uid="Mannequin.Bindings.Item.HasTag(Mannequin.Bindings.EItemTag)">HasTag(EItemTag)</h4>
+  <div class="markdown level1 summary"><p>Whether this item has a tag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasTag(EItemTag tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.EItemTag.html">EItemTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>The item tag to check</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether this item has the specified tag</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Item_RemoveTag_" data-uid="Mannequin.Bindings.Item.RemoveTag*"></a>
+  <h4 id="Mannequin_Bindings_Item_RemoveTag_Mannequin_Bindings_EItemTag_" data-uid="Mannequin.Bindings.Item.RemoveTag(Mannequin.Bindings.EItemTag)">RemoveTag(EItemTag)</h4>
+  <div class="markdown level1 summary"><p>Remove a tag from this item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveTag(EItemTag tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.EItemTag.html">EItemTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>The tag to remove</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>&copy; 2020 <a href="https://www.anarkisgaming.com/">Anarkis Gaming</a>. All rights reserved. Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

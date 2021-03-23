@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>After the Collapse Lua API documentation - After the Collapse Modding Documentation</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="After the Collapse Lua API documentation ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/icon.png" height="48">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="after-the-collapse-lua-api-documentation">After the Collapse Lua API documentation</h1>
+
+<p>Documented here is all of the classes, methods, and enums that you can use in your Lua scripts.</p>
+<h2 id="faq">FAQ</h2>
+<h3 id="where-can-i-learn-lua">Where can I learn Lua?</h3>
+<p>If you're totally new, you can use <a href="https://www.lua.org/start.html">the official Lua documentation</a> to learn.</p>
+<p>If you are already familiar with programming concepts, Tyler Neylon's <a href="http://tylerneylon.com/a/learn-lua/">Learn Lua in 15 Minutes</a> is a great resource. Remember, indices start from 1!</p>
+<p>Alex has written <a href="https://github.com/antigravities/Tombstones">an example mod</a> that might also help ease you into writing Lua for After the Collapse.</p>
+<h3 id="how-do-i-create-a-lua-mod">How do I create a Lua mod?</h3>
+<p>First, create a new mod from the mod menu in game. You'll want to select the <code>content-and-lua</code> template. Then, open <code>main.lua</code> and start editing!</p>
+<h3 id="how-do-i-use-a-class">How do I use a class?</h3>
+<p>Import it, usually at the top of your file:</p>
+<pre><code class="lang-lua">Mannequin:Import(&quot;Event&quot;)
+Mannequin:Import(&quot;UI&quot;)
+</code></pre>
+<p>Then you'll have access to the class globally within your script:</p>
+<pre><code class="lang-lua">Event.On(&quot;Menu&quot;, function()
+  UI.ShowMessageDialog(&quot;Hello, world!&quot;)
+end)
+</code></pre>
+<p>Create new instances of classes by calling the class name like any other method:</p>
+<pre><code class="lang-lua">Mannequin:Import(&quot;Clutter&quot;)
+
+local campfire = Clutter(&quot;craft_campfire&quot;) -- this is an instance of Clutter
+campfire.Position = Point(25, 2) -- only modifies the above mentioned Clutter
+</code></pre>
+<h3 id="how-do-i-do-something-when-something-happens-in-game">How do I do something when something happens in-game?</h3>
+<p>Use the <code>Event</code> class's <code>On</code> or <code>Once</code> functions:</p>
+<pre><code class="lang-lua">Mannequin:Import(&quot;Event&quot;)
+
+Event.On(&quot;GameOver&quot;, function()
+  UI.ShowMessageDialog(&quot;O noooes the game ended!!&quot;)
+end)
+</code></pre>
+<p>Certain events can be cancelled by returning <code>false</code> to your event listener method; this usually means that you can prevent an event from happening in-game:</p>
+<pre><code class="lang-lua">Mannequin:Import(&quot;Event&quot;)
+
+Event.On(&quot;AgentDamage&quot;, function()
+  UI.ShowMessageDialog(&quot;Everyone is invincible~&quot;)
+  return false
+end)
+</code></pre>
+<p>Remove an event listener at any time by using <code>EventListener.Cancel</code>:</p>
+<pre><code class="lang-lua">Mannequin:Import(&quot;Event&quot;)
+
+local noDamage = Event.On(&quot;AgentDamage&quot;, function()
+  return false
+end)
+
+-- ...
+
+noDamage:Cancel()
+</code></pre>
+<p>A list of the events you can bind to is available <a href="Mannequin.Bindings.Events.html">here</a>.</p>
+<h3 id="how-do-i-include-other-lua-files-from-my-entry-point">How do I include other Lua files from my entry point?</h3>
+<p>Use <a href="Mannequin.Bindings.Mannequin.html#Mannequin_Bindings_Mannequin_Require_System_String_">Mannequin:Require()</a> or <a href="Mannequin.Bindings.Mannequin.html#Mannequin_Bindings_Mannequin_Import_System_String_">Mannequin:Import()</a> depending on your use case.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>&copy; 2020 <a href="https://www.anarkisgaming.com/">Anarkis Gaming</a>. All rights reserved. Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

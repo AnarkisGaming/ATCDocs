@@ -1,0 +1,929 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Weapon
+   - After the Collapse Modding Documentation</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Weapon
+   ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/icon.png" height="48">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mannequin.Bindings.Weapon">
+  
+  
+  <h1 id="Mannequin_Bindings_Weapon" data-uid="Mannequin.Bindings.Weapon" class="text-break">Class Weapon
+  </h1>
+  <div class="markdown level0 summary"><p>Equippable, drawable <a class="xref" href="Mannequin.Bindings.Item.html">Item</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Mannequin.Bindings.Item.html">Item</a></div>
+    <div class="level2"><a class="xref" href="Mannequin.Bindings.Equippable.html">Equippable</a></div>
+    <div class="level3"><span class="xref">Weapon</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Equippable.html#Mannequin_Bindings_Equippable_AddAllowedSlot_Mannequin_Bindings_EEquipSlot_">Equippable.AddAllowedSlot(EEquipSlot)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Equippable.html#Mannequin_Bindings_Equippable_IsAllowedSlot_Mannequin_Bindings_EEquipSlot_">Equippable.IsAllowedSlot(EEquipSlot)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Equippable.html#Mannequin_Bindings_Equippable_RemoveAllowedSlot_Mannequin_Bindings_EEquipSlot_">Equippable.RemoveAllowedSlot(EEquipSlot)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Equippable.html#Mannequin_Bindings_Equippable_Visible">Equippable.Visible</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Equippable.html#Mannequin_Bindings_Equippable_BreaksDownTo">Equippable.BreaksDownTo</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Equippable.html#Mannequin_Bindings_Equippable_WornTexture">Equippable.WornTexture</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Item.html#Mannequin_Bindings_Item_ID">Item.ID</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Item.html#Mannequin_Bindings_Item_IsCloned">Item.IsCloned</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Item.html#Mannequin_Bindings_Item_InventoryTexture">Item.InventoryTexture</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Item.html#Mannequin_Bindings_Item_Name">Item.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Item.html#Mannequin_Bindings_Item_Description">Item.Description</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Item.html#Mannequin_Bindings_Item_Type">Item.Type</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Item.html#Mannequin_Bindings_Item_CanDrop">Item.CanDrop</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Item.html#Mannequin_Bindings_Item_IsStackable">Item.IsStackable</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Item.html#Mannequin_Bindings_Item_AvailableOnStartMenu">Item.AvailableOnStartMenu</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Item.html#Mannequin_Bindings_Item_HasTag_Mannequin_Bindings_EItemTag_">Item.HasTag(EItemTag)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Item.html#Mannequin_Bindings_Item_AddTag_Mannequin_Bindings_EItemTag_">Item.AddTag(EItemTag)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Item.html#Mannequin_Bindings_Item_RemoveTag_Mannequin_Bindings_EItemTag_">Item.RemoveTag(EItemTag)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Item.html#Mannequin_Bindings_Item_AddToGame_System_String_">Item.AddToGame(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Item.html#Mannequin_Bindings_Item_Clone">Item.Clone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mannequin.Bindings.html">Mannequin.Bindings</a></h6>
+  <h6><strong>Assembly</strong>: Collapse.dll</h6>
+  <h5 id="Mannequin_Bindings_Weapon_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Weapon : Equippable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Mannequin_Bindings_Weapon__ctor_" data-uid="Mannequin.Bindings.Weapon.#ctor*"></a>
+  <h4 id="Mannequin_Bindings_Weapon__ctor_System_String_" data-uid="Mannequin.Bindings.Weapon.#ctor(System.String)">Weapon(String)</h4>
+  <div class="markdown level1 summary"><p>Create a new Weapon based on an existing game asset (see data/items/weapons)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Weapon(string asset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">asset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Mannequin_Bindings_Weapon_AdditionalBulletsPerShot_" data-uid="Mannequin.Bindings.Weapon.AdditionalBulletsPerShot*"></a>
+  <h4 id="Mannequin_Bindings_Weapon_AdditionalBulletsPerShot" data-uid="Mannequin.Bindings.Weapon.AdditionalBulletsPerShot">AdditionalBulletsPerShot</h4>
+  <div class="markdown level1 summary"><p>The number of additional bullets to shoot per shot</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AdditionalBulletsPerShot { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Weapon_AdditionalBulletsSpread_" data-uid="Mannequin.Bindings.Weapon.AdditionalBulletsSpread*"></a>
+  <h4 id="Mannequin_Bindings_Weapon_AdditionalBulletsSpread" data-uid="Mannequin.Bindings.Weapon.AdditionalBulletsSpread">AdditionalBulletsSpread</h4>
+  <div class="markdown level1 summary"><p>The spread of the additional bullets defined in <a class="xref" href="Mannequin.Bindings.Weapon.html#Mannequin_Bindings_Weapon_AdditionalBulletsPerShot">AdditionalBulletsPerShot</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AdditionalBulletsSpread { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Weapon_BaseDamage_" data-uid="Mannequin.Bindings.Weapon.BaseDamage*"></a>
+  <h4 id="Mannequin_Bindings_Weapon_BaseDamage" data-uid="Mannequin.Bindings.Weapon.BaseDamage">BaseDamage</h4>
+  <div class="markdown level1 summary"><p>This weapon's base damage amount</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BaseDamage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Weapon_BulletSpeed_" data-uid="Mannequin.Bindings.Weapon.BulletSpeed*"></a>
+  <h4 id="Mannequin_Bindings_Weapon_BulletSpeed" data-uid="Mannequin.Bindings.Weapon.BulletSpeed">BulletSpeed</h4>
+  <div class="markdown level1 summary"><p>The speed of bullets fired from this Weapon</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BulletSpeed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Weapon_BulletSprite_" data-uid="Mannequin.Bindings.Weapon.BulletSprite*"></a>
+  <h4 id="Mannequin_Bindings_Weapon_BulletSprite" data-uid="Mannequin.Bindings.Weapon.BulletSprite">BulletSprite</h4>
+  <div class="markdown level1 summary"><p>The sprite of bullets fired from this</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture BulletSprite { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Texture.html">Texture</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Weapon_CriticalChance_" data-uid="Mannequin.Bindings.Weapon.CriticalChance*"></a>
+  <h4 id="Mannequin_Bindings_Weapon_CriticalChance" data-uid="Mannequin.Bindings.Weapon.CriticalChance">CriticalChance</h4>
+  <div class="markdown level1 summary"><p>The chance of getting a critical hit</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CriticalChance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Weapon_DamageVariance_" data-uid="Mannequin.Bindings.Weapon.DamageVariance*"></a>
+  <h4 id="Mannequin_Bindings_Weapon_DamageVariance" data-uid="Mannequin.Bindings.Weapon.DamageVariance">DamageVariance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DamageVariance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Weapon_HasBulletTrail_" data-uid="Mannequin.Bindings.Weapon.HasBulletTrail*"></a>
+  <h4 id="Mannequin_Bindings_Weapon_HasBulletTrail" data-uid="Mannequin.Bindings.Weapon.HasBulletTrail">HasBulletTrail</h4>
+  <div class="markdown level1 summary"><p>Whether this weapon's bullets have a trail or not</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasBulletTrail { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Weapon_HitSFX_" data-uid="Mannequin.Bindings.Weapon.HitSFX*"></a>
+  <h4 id="Mannequin_Bindings_Weapon_HitSFX" data-uid="Mannequin.Bindings.Weapon.HitSFX">HitSFX</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Mannequin.Bindings.Sound.html">Sound</a> to play when this Weapon hits</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Sound HitSFX { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Sound.html">Sound</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Weapon_IdealAmmoCountToCarry_" data-uid="Mannequin.Bindings.Weapon.IdealAmmoCountToCarry*"></a>
+  <h4 id="Mannequin_Bindings_Weapon_IdealAmmoCountToCarry" data-uid="Mannequin.Bindings.Weapon.IdealAmmoCountToCarry">IdealAmmoCountToCarry</h4>
+  <div class="markdown level1 summary"><p>The amount of ammo each Survivor will attempt to pick up</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IdealAmmoCountToCarry { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Weapon_MagazineSize_" data-uid="Mannequin.Bindings.Weapon.MagazineSize*"></a>
+  <h4 id="Mannequin_Bindings_Weapon_MagazineSize" data-uid="Mannequin.Bindings.Weapon.MagazineSize">MagazineSize</h4>
+  <div class="markdown level1 summary"><p>The size of a magazine</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MagazineSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Weapon_MaxRange_" data-uid="Mannequin.Bindings.Weapon.MaxRange*"></a>
+  <h4 id="Mannequin_Bindings_Weapon_MaxRange" data-uid="Mannequin.Bindings.Weapon.MaxRange">MaxRange</h4>
+  <div class="markdown level1 summary"><p>This weapon's maximum range</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxRange { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Weapon_MaxRangeAccuracy_" data-uid="Mannequin.Bindings.Weapon.MaxRangeAccuracy*"></a>
+  <h4 id="Mannequin_Bindings_Weapon_MaxRangeAccuracy" data-uid="Mannequin.Bindings.Weapon.MaxRangeAccuracy">MaxRangeAccuracy</h4>
+  <div class="markdown level1 summary"><p>This weapon's accuracy at maximum range</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxRangeAccuracy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Weapon_MinRange_" data-uid="Mannequin.Bindings.Weapon.MinRange*"></a>
+  <h4 id="Mannequin_Bindings_Weapon_MinRange" data-uid="Mannequin.Bindings.Weapon.MinRange">MinRange</h4>
+  <div class="markdown level1 summary"><p>This weapon's minimum range</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MinRange { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Weapon_MinRangeAccuracy_" data-uid="Mannequin.Bindings.Weapon.MinRangeAccuracy*"></a>
+  <h4 id="Mannequin_Bindings_Weapon_MinRangeAccuracy" data-uid="Mannequin.Bindings.Weapon.MinRangeAccuracy">MinRangeAccuracy</h4>
+  <div class="markdown level1 summary"><p>This weapon's accuracy at minimum range</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MinRangeAccuracy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Weapon_RateOfFire_" data-uid="Mannequin.Bindings.Weapon.RateOfFire*"></a>
+  <h4 id="Mannequin_Bindings_Weapon_RateOfFire" data-uid="Mannequin.Bindings.Weapon.RateOfFire">RateOfFire</h4>
+  <div class="markdown level1 summary"><p>This weapon's fire rate</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RateOfFire { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Weapon_ReloadSFX_" data-uid="Mannequin.Bindings.Weapon.ReloadSFX*"></a>
+  <h4 id="Mannequin_Bindings_Weapon_ReloadSFX" data-uid="Mannequin.Bindings.Weapon.ReloadSFX">ReloadSFX</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Mannequin.Bindings.Sound.html">Sound</a> to play when this Weapon is reloading</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Sound ReloadSFX { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Sound.html">Sound</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Weapon_ReloadTime_" data-uid="Mannequin.Bindings.Weapon.ReloadTime*"></a>
+  <h4 id="Mannequin_Bindings_Weapon_ReloadTime" data-uid="Mannequin.Bindings.Weapon.ReloadTime">ReloadTime</h4>
+  <div class="markdown level1 summary"><p>The time it takes to reload this Weapon</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ReloadTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Weapon_ShootSFX_" data-uid="Mannequin.Bindings.Weapon.ShootSFX*"></a>
+  <h4 id="Mannequin_Bindings_Weapon_ShootSFX" data-uid="Mannequin.Bindings.Weapon.ShootSFX">ShootSFX</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Mannequin.Bindings.Sound.html">Sound</a> to play when this Weapon is fired.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Sound ShootSFX { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Sound.html">Sound</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Weapon_SplashDamageLossFromDistance_" data-uid="Mannequin.Bindings.Weapon.SplashDamageLossFromDistance*"></a>
+  <h4 id="Mannequin_Bindings_Weapon_SplashDamageLossFromDistance" data-uid="Mannequin.Bindings.Weapon.SplashDamageLossFromDistance">SplashDamageLossFromDistance</h4>
+  <div class="markdown level1 summary"><p>Splash damage reduction. The target tile will receive the base damage, and then tiles around the target tile will receive the base damage - (SplashDamageLossFromDistance * number of tiles away)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SplashDamageLossFromDistance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Weapon_SplashDamageRange_" data-uid="Mannequin.Bindings.Weapon.SplashDamageRange*"></a>
+  <h4 id="Mannequin_Bindings_Weapon_SplashDamageRange" data-uid="Mannequin.Bindings.Weapon.SplashDamageRange">SplashDamageRange</h4>
+  <div class="markdown level1 summary"><p>The range splash damage has (i.e. with RPGs)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SplashDamageRange { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Weapon_WeaponType_" data-uid="Mannequin.Bindings.Weapon.WeaponType*"></a>
+  <h4 id="Mannequin_Bindings_Weapon_WeaponType" data-uid="Mannequin.Bindings.Weapon.WeaponType">WeaponType</h4>
+  <div class="markdown level1 summary"><p>This weapon's type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EWeaponType WeaponType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.EWeaponType.html">EWeaponType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Mannequin_Bindings_Weapon_Combine_" data-uid="Mannequin.Bindings.Weapon.Combine*"></a>
+  <h4 id="Mannequin_Bindings_Weapon_Combine_Mannequin_Bindings_Weapon_" data-uid="Mannequin.Bindings.Weapon.Combine(Mannequin.Bindings.Weapon)">Combine(Weapon)</h4>
+  <div class="markdown level1 summary"><p>Clones this Weapon and combines its stats with another.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Weapon Combine(Weapon added)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Weapon.html">Weapon</a></td>
+        <td><span class="parametername">added</span></td>
+        <td><p>The weapon to combine with</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Weapon.html">Weapon</a></td>
+        <td><p>A cloned Weapon with its stats combined.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Weapon_IsReadyToFire_" data-uid="Mannequin.Bindings.Weapon.IsReadyToFire*"></a>
+  <h4 id="Mannequin_Bindings_Weapon_IsReadyToFire_Mannequin_Bindings_Agent_" data-uid="Mannequin.Bindings.Weapon.IsReadyToFire(Mannequin.Bindings.Agent)">IsReadyToFire(Agent)</h4>
+  <div class="markdown level1 summary"><p>Whether the <a class="xref" href="Mannequin.Bindings.Agent.html">Agent</a> carrying this Weapon can be fire the Weapon or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadyToFire(Agent agent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Agent.html">Agent</a></td>
+        <td><span class="parametername">agent</span></td>
+        <td><p>The Agent carrying this weapon</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether the Weapon can be fired or not</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Weapon_Reload_" data-uid="Mannequin.Bindings.Weapon.Reload*"></a>
+  <h4 id="Mannequin_Bindings_Weapon_Reload_Mannequin_Bindings_Agent_" data-uid="Mannequin.Bindings.Weapon.Reload(Mannequin.Bindings.Agent)">Reload(Agent)</h4>
+  <div class="markdown level1 summary"><p>Tell an <a class="xref" href="Mannequin.Bindings.Agent.html">Agent</a> holding this Weapon to reload it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Reload(Agent agent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Agent.html">Agent</a></td>
+        <td><span class="parametername">agent</span></td>
+        <td><p>The Agent carrying this weapon</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether this weapon was successfully reloaded or not</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>&copy; 2020 <a href="https://www.anarkisgaming.com/">Anarkis Gaming</a>. All rights reserved. Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

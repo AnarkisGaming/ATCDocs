@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Quickstart - After the Collapse Modding Documentation</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Quickstart ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/icon.png" height="48">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="quickstart">Quickstart</h1>
+
+<p>After The Collapse is a fully moddable game. A very large part of the game is contained in our data, written in human readable JSON text files. Code for modifying game logic can by added via Lua.</p>
+<h2 id="mod-file-structure">Mod File Structure</h2>
+<p>Mods, when not acquired through the Steam Workshop, should be put in the {game path}\mods\your_new_mod sub-folder. Each mod goes in its own sub-folder. The game allows you to create a blank mod easily directly from the “Mods” menu on the main screen.</p>
+<p>(image)</p>
+<p>It will create the very basic structure for your mod:</p>
+<pre><code class="lang-plain">MyMod
+  |-&gt; config.json    &lt;- config file describing the mod, with name, description, version number. Required.
+  |-&gt; main.lua       &lt;- Lua entry point if you want to alter the game's logic. Optional.
+  |-&gt; files/         &lt;- Folder containing data files you want to add or modify. Required.
+      |-&gt; data/      &lt;- contains game/data files to add or override (items, objects, npc, tech, etc.). Optional (add it manually).
+      |-&gt; Content/   &lt;- contains game/Content files to add or override (images, textures, sfx, music). Optional (add it manually).
+</code></pre>
+<p>Files placed in the files/ folder will be included in the game granted you respect the same folder structure we're using.</p>
+<h2 id="adding-or-editing-data">Adding or Editing Data</h2>
+<p>Granted you respect the format and the file structure, you can pretty much add or modify anything existing in the game. For example: if you wanted to override the properties of the lettuce seeds, you would have to create data/items/seeds/lettuce.json within the files/ folder. Your mod folder would then look like this:</p>
+<pre><code class="lang-plain">MyMod
+|-&gt; config.json
+|-&gt; files/data/items/seeds/
+    |-&gt; lettuce.json
+</code></pre>
+<p>We'd advise you to use files from the base game as examples, whether you plan to override existing items or not. Copy them, rename them if necessary, and alter them. Of course, it might take you a little while and some experimentation to figure out what each line in each file does, but we'll be happy to provide some explanation within the Discord guild or the Steam Community forums.</p>
+<p><strong>NOTE</strong>: Tile images <em>must</em> be the same size or the tile blender will crash. All of the tiles in the game are, by default, 64x64.</p>
+<h2 id="adding-or-editing-content">Adding or Editing Content</h2>
+<p>The game allows you to modify and add images, sprites, sound effects, and music tracks. Content can be overridden or added just like with data. There are a few guidelines to follow:</p>
+<ul>
+<li>Textures must be in PNG (recommended) or JP(E)G formats. (JP(E)G files are supported by the engine, but that's not something you should use unless you really know what you're doing)</li>
+<li>Sound files must be OGG, WMA, MP3 or WAV files (Sound files in files\Content\sfx\ will be processed as sound effects, sound files in any other folder will be imported as songs (this is relevant when importing media through the Lua API))</li>
+</ul>
+<p>Any textures and/or sounds that are part of your mod must be built by the game's engine. This is automatically done at runtime and will convert your images and sounds in the required .xnb file format. The game will only build content without a matching .xnb, so delete the compiled file whenever you change something in your source.</p>
+<h2 id="lua-api">Lua API</h2>
+<p>The version of the documentation relevant to your version of After the Collapse is available in mods/Help.pdf. The bleeding-edge documentation is available at <a href="https://modding.anarkisgaming.com/">modding.anarkisgaming.com</a>.</p>
+<h2 id="translations">Translations</h2>
+<p>Get started with translations <a href="/articles/translations.html">here</a>.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>&copy; 2020 <a href="https://www.anarkisgaming.com/">Anarkis Gaming</a>. All rights reserved. Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

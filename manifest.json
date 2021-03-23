@@ -1,0 +1,1955 @@
+{
+  "homepages": [],
+  "source_base_path": "/github/workspace/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.AI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.AI.html",
+          "hash": "Kt6QPikMsTEe2SksVR5EMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Agent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Agent.html",
+          "hash": "JMExHvRaGnKNL2lLf8yO2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.AgentData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.AgentData.html",
+          "hash": "jPRp/GVPPSpo7dIS50/gpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.AgentDeathInformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.AgentDeathInformation.html",
+          "hash": "EQ8cnB3oUS1K6BxZXL8PIw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Animation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Animation.html",
+          "hash": "CQXY8WNV4SaRnByHgvIGuQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Armor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Armor.html",
+          "hash": "qlwPMu+3jQACcvhCkUbNDg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.AsyncOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.AsyncOperation.html",
+          "hash": "GF8WatmH7sOOu/fkJGA8dg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.BodyDef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.BodyDef.html",
+          "hash": "rRZh+Q/QRPXm2y02Zdca/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.BodyGraph.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.BodyGraph.html",
+          "hash": "OtHmsguvtAPs0L+Qf1fwPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.BodyPart.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.BodyPart.html",
+          "hash": "a60+lQ+GK2HCsfRgSk8c6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.BodyPartData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.BodyPartData.html",
+          "hash": "5UxJzj7kSzwuWYC7mjq6Bg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Bullet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Bullet.html",
+          "hash": "jRPzoyaoME+6VSwZBXciMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Clutter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Clutter.html",
+          "hash": "QOCLuxdPv3MZPKrB6ltn1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.ClutterData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.ClutterData.html",
+          "hash": "0kItdVV3ChdjBFs3tEGU7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Color.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Color.html",
+          "hash": "hA1sAV3jpMGrkq3lWtt7fg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Colors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Colors.html",
+          "hash": "ghuTwEy1nMUPBaadH4qhCQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Date.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Date.html",
+          "hash": "iU4Y3DwD5rrhQ58Vjl0rxQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EAIState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EAIState.html",
+          "hash": "1k25ekod7vytHl3WyAJYOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EAnimationType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EAnimationType.html",
+          "hash": "UB3Ah6xpH8M6DmeSF2w9nA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EBodyPartType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EBodyPartType.html",
+          "hash": "wl8FU3bD1ZIt/SXLEOnYhw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EBodyType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EBodyType.html",
+          "hash": "mVSAzsO/ko2gKjVJ5Zlf+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EBuildRotation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EBuildRotation.html",
+          "hash": "YiK7kAuyJBXAK2YijRf88w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EBuildingPositioning.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EBuildingPositioning.html",
+          "hash": "BDwVFYA50zysLpLOF7inpA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EBuildingType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EBuildingType.html",
+          "hash": "stg75ZRLEtA9KX72YU/9Xg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EClutterType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EClutterType.html",
+          "hash": "nMZEZUNy6VSwUrjTREzKeA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EDamageLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EDamageLevel.html",
+          "hash": "kTvzfdql3pUIcnLVC788QQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EDeathReason.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EDeathReason.html",
+          "hash": "H7RjQgYJ57MIAnl1SX38jQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EDiplomacyAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EDiplomacyAction.html",
+          "hash": "4kkOORbpMHkOfOdeNbynGw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EEquipSlot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EEquipSlot.html",
+          "hash": "THuren3CVMzO4ryK6JoRnQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EExpeditionEventEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EExpeditionEventEffect.html",
+          "hash": "0axeWmUk+0+APyAU8RcC4A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EFactionRelationship.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EFactionRelationship.html",
+          "hash": "3RpcUM+uazJ47IRPG2AwNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EFactionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EFactionType.html",
+          "hash": "vp1yyshkSBDDyea+gZbKzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EGameActivity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EGameActivity.html",
+          "hash": "FRLMim+RI48xDaJ3fpc0lQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EGameStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EGameStatus.html",
+          "hash": "alHGRAqXLFjbqejd9XIAjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EIOContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EIOContext.html",
+          "hash": "imqXhixWytkGPBFuquDWrw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EIngredientType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EIngredientType.html",
+          "hash": "MfT6Stct2NdFrTxt7n2DzQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EIntegrityStrength.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EIntegrityStrength.html",
+          "hash": "mbP3p5dCgLVFa9G/6EbtFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EItemTag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EItemTag.html",
+          "hash": "qbLc0FQI9QvL2S0hV5d56g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EItemType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EItemType.html",
+          "hash": "NXfilylXpNxdmIiEui86UQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EJobResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EJobResult.html",
+          "hash": "VaMjEjOZkqwBALzNc65qTg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.ELayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.ELayer.html",
+          "hash": "9bKgws2L0zqWquxL/wuryg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.ELivingAI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.ELivingAI.html",
+          "hash": "3i+EHuZovOFrsu2/TnHiIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.ELivingCategory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.ELivingCategory.html",
+          "hash": "0W2o33EjoNsyv0up9OZrbQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.ELivingNeed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.ELivingNeed.html",
+          "hash": "JYHRS1XRXiq41maeErbuCQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.ELocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.ELocation.html",
+          "hash": "u6OgFDeI4INIfPGWhbCr7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EMapArchetype.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EMapArchetype.html",
+          "hash": "m48/a4s62QerY0+8GqFkXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EModSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EModSource.html",
+          "hash": "CrhH2JM260D28D+m5LdC8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EParticleEffectType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EParticleEffectType.html",
+          "hash": "DjP8UJBd+vPceOgJ/1n60w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.ERoofStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.ERoofStatus.html",
+          "hash": "Z1AOtJdB4YRu63+1CPI8EA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.ESceneType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.ESceneType.html",
+          "hash": "BgZdkYTMqqQ6eSY/UwV4RQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.ESex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.ESex.html",
+          "hash": "3e9VkfpqEcerTBT9hJQ92Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.ESkinColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.ESkinColor.html",
+          "hash": "UgWsL6wZYqb4/L/HHJa3Iw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.ESpawnAllowed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.ESpawnAllowed.html",
+          "hash": "UYlzJym+gDb+o1Y45zpKLQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EStatsChangeMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EStatsChangeMode.html",
+          "hash": "2oViAXOr3RgM2RkAWvz1zA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.ESubClutterPositioning.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.ESubClutterPositioning.html",
+          "hash": "5C6Zx4F2QEYvJ7gZuRHNcQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.ETraitEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.ETraitEffect.html",
+          "hash": "toqWtAo/54aeRWaov8sFkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.ETraitGivingMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.ETraitGivingMode.html",
+          "hash": "dDbs8PWZ+8gVhyN4vl+spQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.ETraitType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.ETraitType.html",
+          "hash": "WHVWZG3gh5J/1KKen0QlVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EUIAnchor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EUIAnchor.html",
+          "hash": "Mk9PPCpr6zNaaZFeLdwwxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EUndergroundType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EUndergroundType.html",
+          "hash": "zz/n5EgAC3tyHBz/t3/kbg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EWeaponDamageType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EWeaponDamageType.html",
+          "hash": "0QcgtL4yaSFBxL5Yokp1Kg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EWeaponType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EWeaponType.html",
+          "hash": "RWKr6ojcaA0RbkDMqxVQ9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EZoneType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EZoneType.html",
+          "hash": "Ad7NEvWcfnRkYsdxr0T4RQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Emote.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Emote.html",
+          "hash": "+C/WUsmWqk+qgpw1WEETpg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Equippable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Equippable.html",
+          "hash": "iNJce9KfbfizSZUqlxAg0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Event.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Event.html",
+          "hash": "lqXuZpK7fXtwHj23zevkSA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.EventListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.EventListener.html",
+          "hash": "NIWj8EoNeL5kffDCPaV16A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Events.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Events.html",
+          "hash": "Xte8uZWOeyYCgVThDN7Syg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Expedition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Expedition.html",
+          "hash": "ggZyK1iekkxtzji9mN3kBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.ExpeditionEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.ExpeditionEvent.html",
+          "hash": "+wPqKrVFWSbTycsI2VttgQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.ExpeditionLength.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.ExpeditionLength.html",
+          "hash": "WbwhcbsDWeA7ohtpgWp0Dg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.ExpeditionState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.ExpeditionState.html",
+          "hash": "P+vnbMg/iXiav2Sr454YFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Faction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Faction.html",
+          "hash": "t16nzGv5oAmFYNMcbNarMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Factory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Factory.html",
+          "hash": "l3JeNJyfsUzecY3I1TV/NA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.FoodRecipe.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.FoodRecipe.html",
+          "hash": "6O2r2CstArSgocfmrGA3Xg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Game.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Game.html",
+          "hash": "52CfKLKs+XtANeCwOsNu5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.HTTP.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.HTTP.html",
+          "hash": "pbaZX2ieuCzkpdBoztmhzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.IMannequinMod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.IMannequinMod.html",
+          "hash": "rWLYgVqjvzV2sA2eFtuQWg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.IO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.IO.html",
+          "hash": "DTZ1jvgExaMfNmwgxoiNvg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Inventory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Inventory.html",
+          "hash": "oJPCb3pxOzg/C4dBfJLh6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.InventoryItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.InventoryItem.html",
+          "hash": "SjN0BvmU3rcFlQAS7jPP7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Item.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Item.html",
+          "hash": "PO9RQU8s9dO7i+uc0zeKoQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.ItemFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.ItemFilter.html",
+          "hash": "LVK0J3fbcql1+cmMxJgL2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Job.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Job.html",
+          "hash": "xwSYvvDEM5usaGz8eVfb6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.JobResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.JobResult.html",
+          "hash": "51fLj4CQGVVB4wMw1xJIOw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Killable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Killable.html",
+          "hash": "hWDIpZvzZCLcqP8SU6pw0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Living.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Living.html",
+          "hash": "ZU8TnTHcgxOKO/PN2IjUQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.LivingData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.LivingData.html",
+          "hash": "BhhPXs8rn9zmYthDrQCyBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.LivingEquipmentList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.LivingEquipmentList.html",
+          "hash": "QORAi38sNWAQkI/+lMq6TQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.LivingJobAptitude.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.LivingJobAptitude.html",
+          "hash": "AZiGZDsl/DEUGPC56i/FyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.LivingStats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.LivingStats.html",
+          "hash": "zXP7YjZL5ziEL00aoN4DLQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Mannequin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Mannequin.html",
+          "hash": "d5o+lRbW00KfMHTWtsX1Bg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Mob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Mob.html",
+          "hash": "+XF9x/Z704YxLaJJ3HYPqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.NativeMod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.NativeMod.html",
+          "hash": "fMFXQhFXHpGn8PxSq0JCLw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.PendingTimer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.PendingTimer.html",
+          "hash": "1277Akn5BbooDf4ri3vxGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Point.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Point.html",
+          "hash": "vBQtRgc2uHEG4/t/tTKWDg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.PointOfInterest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.PointOfInterest.html",
+          "hash": "t5njhZByP/jzfXsPbWQ0sw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.PositioningData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.PositioningData.html",
+          "hash": "NpHTwcqviFhpCxiN4onfcQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Recipe.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Recipe.html",
+          "hash": "+7F9fA0IOa+iNFQlxhHQMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Rectangle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Rectangle.html",
+          "hash": "BAKGJfgAox/WTeI5DPuSCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Scene.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Scene.html",
+          "hash": "JuHmAsZLKH3GE0NFo+nApw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.SceneGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.SceneGroup.html",
+          "hash": "j4dyFf9ENnce3CC6vW4LzA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.SceneOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.SceneOptions.html",
+          "hash": "V56s5ta1JP98uwFoVZ0u8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Song.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Song.html",
+          "hash": "64P8PUZPzi17qluq/Sj0pQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Sound.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Sound.html",
+          "hash": "YulmCELhxeiNb0bjW9EiNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Steamworks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Steamworks.html",
+          "hash": "6rtc41ebW4LPFy1aNGCIpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.SteamworksMod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.SteamworksMod.html",
+          "hash": "Mkja0qU+NlNCQoJ4BFIqtA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.SteamworksPersona.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.SteamworksPersona.html",
+          "hash": "xo4387jUat0mNZIckDThDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.SubClutter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.SubClutter.html",
+          "hash": "TMChbARi4SjT8K/wMazNhQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Tech.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Tech.html",
+          "hash": "LTLT3SwxtsQ4j920PaXKvg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Texture.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Texture.html",
+          "hash": "b4aT3yZeAR4xQspwK345pg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.TextureDrawController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.TextureDrawController.html",
+          "hash": "QpGAclEtmrHOSe9+hDOCpA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Theme.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Theme.html",
+          "hash": "7XxlN/I/75/WnaHS14bvbw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Tile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Tile.html",
+          "hash": "h0bPEI74rn2CHug+Uh0sJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Timer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Timer.html",
+          "hash": "gvaXLDb26PBZMXtXr3LX4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Trait.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Trait.html",
+          "hash": "LDXGB/PmD32h3Tt9NLqFJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.UI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.UI.html",
+          "hash": "Hci03gXP6wh3xc0N52zdHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.UIButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.UIButton.html",
+          "hash": "yKsvItLN4hA/njS55HZb6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.UICheckable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.UICheckable.html",
+          "hash": "h0jOKwpfoQfUprhObS+FbQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.UICheckbox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.UICheckbox.html",
+          "hash": "gYwfbgJqtIH07NO1DoLC+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.UIComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.UIComponent.html",
+          "hash": "W+IDG9zuql/LN5Dtr7XNOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.UIFontStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.UIFontStyle.html",
+          "hash": "vEUfqIGpvlS99/zpR3u5Xw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.UIHeader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.UIHeader.html",
+          "hash": "Gjp+rLEAD+aBNa1SjJpudg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.UILabel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.UILabel.html",
+          "hash": "DCCoPS2jdcE3CpSx6FXbZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.UIMulticolorParagraph.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.UIMulticolorParagraph.html",
+          "hash": "JsXD3WD6lajQljEar5ZJiw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.UIOverlay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.UIOverlay.html",
+          "hash": "lQdwT59BJsIiJqii/eLtGw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.UIPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.UIPanel.html",
+          "hash": "m1gI/OE9Ku49FUnLCw9vmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.UIPanelListItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.UIPanelListItem.html",
+          "hash": "qZDItI1Osva1opIPcB4qQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.UIParagraph.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.UIParagraph.html",
+          "hash": "IVY7+i0ENEUTxW5AugnQ8A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.UIProgressBar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.UIProgressBar.html",
+          "hash": "1yc2WwYgUZs5p4HkL2gvOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.UIRadioButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.UIRadioButton.html",
+          "hash": "intxq7nIU3ppaGIBjcNpTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.UIRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.UIRoot.html",
+          "hash": "MIOUQWBn1bBB5tEZm0e4uA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.UISelectList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.UISelectList.html",
+          "hash": "5vzXtvihRtEAFTXpc7XaXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.UISlider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.UISlider.html",
+          "hash": "HuLim+cGAzij5GHRgyjnng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Vector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Vector.html",
+          "hash": "wvLZs/+LfTIedaFn3oTS6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Wall.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Wall.html",
+          "hash": "0SL6Ut3vFRKEJAZTi2rVpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.WallData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.WallData.html",
+          "hash": "QTwAbbNWHPtWwYrr/UL38w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Weapon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Weapon.html",
+          "hash": "D8BqBE0+uvcTS/GrJ7pQmg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.Zone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.Zone.html",
+          "hash": "Qj9d1HBEvJfow5wNFf/q9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mannequin.Bindings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mannequin.Bindings.html",
+          "hash": "lczztGL3uykyQpFzH8Ez/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "1y3axXQPCRglIQVXphHUVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/api-index.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/api-index.html",
+          "hash": "mIMAItXpWLVi/67duMBxPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/loadorder.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/loadorder.html",
+          "hash": "Vo2FIke8nbFc3NoS2PUeAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/quickstart.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/quickstart.html",
+          "hash": "knP1ykAlJoOA0box8k0iQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "Qd1bnNAcIuTULde3asbiWg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/translations.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/translations.html",
+          "hash": "rdslN5+3dDKgMpQFQHzgMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/workshop-deprecate.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/workshop-deprecate.html",
+          "hash": "j/BvoD4MmJ6zLFigseJZog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/workshop-download.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/workshop-download.html",
+          "hash": "muKWEMa8CcLGBlJ0piM79w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/workshop-upload.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/workshop-upload.html",
+          "hash": "lQgLnujhy62ZdSVfsqJIaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/deprecated.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/deprecated.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/favicon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/modbrowser.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/modbrowser.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/translation_from_template.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/translation_from_template.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/workshop.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/workshop.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/workshopper.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/workshopper.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "B2d10w+MlNQrQjU43fnXPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "gVfhzJVzhdwdXP020lSG/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 8,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 140,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

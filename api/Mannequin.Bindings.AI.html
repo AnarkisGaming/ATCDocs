@@ -1,0 +1,450 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AI
+   - After the Collapse Modding Documentation</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AI
+   ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/icon.png" height="48">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mannequin.Bindings.AI">
+  
+  
+  <h1 id="Mannequin_Bindings_AI" data-uid="Mannequin.Bindings.AI" class="text-break">Class AI
+  </h1>
+  <div class="markdown level0 summary"><p>
+Control <a class="xref" href="Mannequin.Bindings.Living.html">Living</a> AI from Lua.
+<p>Note: this is currently broken.</p>
+</p>
+<p>
+AIs within the Anarkis Gaming engine are finite state machines.
+</p>
+<p>
+Every game update call, <a class="xref" href="Mannequin.Bindings.AI.html#Mannequin_Bindings_AI_OnCycleStart">OnCycleStart</a> is called if functions are bound to it to determine whether the Action set for the Living&apos;s current <a class="xref" href="Mannequin.Bindings.EAIState.html">EAIState</a>, if any, should be called. In the game, Actions are generally interrupted by needs (e.g. combat).
+</p>
+<p>
+If the result of <a class="xref" href="Mannequin.Bindings.AI.html#Mannequin_Bindings_AI_OnCycleStart">OnCycleStart</a> is false (i.e. not interrupted), the Action is called that reflects the AI&apos;s current state (see <a class="xref" href="Mannequin.Bindings.AI.html#Mannequin_Bindings_AI_AddAction_Mannequin_Bindings_EAIState_Closure_">AddAction(EAIState, Closure)</a>).
+</p>
+<p>
+Then, the Transition function for the current <a class="xref" href="Mannequin.Bindings.EAIState.html">EAIState</a>, if any, is called (see <a class="xref" href="Mannequin.Bindings.AI.html#Mannequin_Bindings_AI_AddTransition_Mannequin_Bindings_EAIState_Closure_">AddTransition(EAIState, Closure)</a>). This is where you should check the environment and the result of the Action to determine whether you should switch states.
+</p>
+<p>
+Finally, <a class="xref" href="Mannequin.Bindings.AI.html#Mannequin_Bindings_AI_OnCycleEnd">OnCycleEnd</a> is called, if any functions are bound to it.
+</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">AI</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mannequin.Bindings.html">Mannequin.Bindings</a></h6>
+  <h6><strong>Assembly</strong>: Collapse.dll</h6>
+  <h5 id="Mannequin_Bindings_AI_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AI : object</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Mannequin_Bindings_AI__ctor_" data-uid="Mannequin.Bindings.AI.#ctor*"></a>
+  <h4 id="Mannequin_Bindings_AI__ctor" data-uid="Mannequin.Bindings.AI.#ctor">AI()</h4>
+  <div class="markdown level1 summary"><p>Create a custom (flexible) AI component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AI()</code></pre>
+  </div>
+  
+  
+  <a id="Mannequin_Bindings_AI__ctor_" data-uid="Mannequin.Bindings.AI.#ctor*"></a>
+  <h4 id="Mannequin_Bindings_AI__ctor_System_String_" data-uid="Mannequin.Bindings.AI.#ctor(System.String)">AI(String)</h4>
+  <div class="markdown level1 summary"><p>Create an AI component from one that exists in the game already.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AI(string template)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">template</span></td>
+        <td><p>The template AI</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Mannequin_Bindings_AI_IsFlexible_" data-uid="Mannequin.Bindings.AI.IsFlexible*"></a>
+  <h4 id="Mannequin_Bindings_AI_IsFlexible" data-uid="Mannequin.Bindings.AI.IsFlexible">IsFlexible</h4>
+  <div class="markdown level1 summary"><p>Whether this is a custom (flexible) AI</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFlexible { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_AI_OnCycleEnd_" data-uid="Mannequin.Bindings.AI.OnCycleEnd*"></a>
+  <h4 id="Mannequin_Bindings_AI_OnCycleEnd" data-uid="Mannequin.Bindings.AI.OnCycleEnd">OnCycleEnd</h4>
+  <div class="markdown level1 summary"><p>Function to run when an AI cycle ends (after each update).</p>
+<p>
+<div class="NOTE"><h5>note</h5><p>
+This is only currently supported for custom (flexible) AI schemes.
+</p></div>
+<p>
+void OnCycleEnd(<a class="xref" href="Mannequin.Bindings.AI.html">AI</a> ai, <see cref="!:System.Int32"></see> gameTime)
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Closure OnCycleEnd { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Closure</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_AI_OnCycleStart_" data-uid="Mannequin.Bindings.AI.OnCycleStart*"></a>
+  <h4 id="Mannequin_Bindings_AI_OnCycleStart" data-uid="Mannequin.Bindings.AI.OnCycleStart">OnCycleStart</h4>
+  <div class="markdown level1 summary"><p>Function to run when an AI cycle starts (before each update). Useful for interupting logic (i.e. when combat occurs). Return true here to skip this cycle.</p>
+<p>
+<div class="NOTE"><h5>note</h5><p>
+This is only currently supported for custom (flexible) AI schemes.
+</p></div>
+<p>
+<see cref="!:System.Boolean"></see> (default false) OnCycleStart(<a class="xref" href="Mannequin.Bindings.AI.html">AI</a> ai, int gameTime)
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Closure OnCycleStart { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Closure</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_AI_State_" data-uid="Mannequin.Bindings.AI.State*"></a>
+  <h4 id="Mannequin_Bindings_AI_State" data-uid="Mannequin.Bindings.AI.State">State</h4>
+  <div class="markdown level1 summary"><p>This AI's <a class="xref" href="Mannequin.Bindings.EAIState.html">EAIState</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EAIState State { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.EAIState.html">EAIState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Mannequin_Bindings_AI_AddAction_" data-uid="Mannequin.Bindings.AI.AddAction*"></a>
+  <h4 id="Mannequin_Bindings_AI_AddAction_Mannequin_Bindings_EAIState_Closure_" data-uid="Mannequin.Bindings.AI.AddAction(Mannequin.Bindings.EAIState,Closure)">AddAction(EAIState, Closure)</h4>
+  <div class="markdown level1 summary"><p>A function to call every update while this AI is in a certain <a class="xref" href="Mannequin.Bindings.EAIState.html">EAIState</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAction(EAIState state, Closure action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.EAIState.html">EAIState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The <a class="xref" href="Mannequin.Bindings.EAIState.html">EAIState</a> to bind to</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Closure</span></td>
+        <td><span class="parametername">action</span></td>
+        <td><p><a class="xref" href="Mannequin.Bindings.JobResult.html">JobResult</a> (default <a class="xref" href="Mannequin.Bindings.JobResult.html#Mannequin_Bindings_JobResult_None">None</a>) OnAction(<a class="xref" href="Mannequin.Bindings.AI.html">AI</a> ai)</p>
+<p>
+The function to call
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_AI_AddAction_" data-uid="Mannequin.Bindings.AI.AddAction*"></a>
+  <h4 id="Mannequin_Bindings_AI_AddAction_Mannequin_Bindings_EAIState_Mannequin_Bindings_Job_" data-uid="Mannequin.Bindings.AI.AddAction(Mannequin.Bindings.EAIState,Mannequin.Bindings.Job)">AddAction(EAIState, Job)</h4>
+  <div class="markdown level1 summary"><p>Assign an Action to a <a class="xref" href="Mannequin.Bindings.Job.html">Job</a> to run while this AI is in a certain <a class="xref" href="Mannequin.Bindings.EAIState.html">EAIState</a>. This is really just replacing boilerplate code and could resolve to</p>
+<p>
+<pre><code>myJob = Job()
+<p>myAI:AddAction(EAIState.None, function()
+if Job.IsComplete then return EJobResult.Success
+else return EJobResult.InProgress
+end
+end)</code></pre></p>
+<p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAction(EAIState state, Job action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.EAIState.html">EAIState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The <a class="xref" href="Mannequin.Bindings.EAIState.html">EAIState</a> to bind to</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Job.html">Job</a></td>
+        <td><span class="parametername">action</span></td>
+        <td><p>The <a class="xref" href="Mannequin.Bindings.Job.html">Job</a> to run</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_AI_AddTransition_" data-uid="Mannequin.Bindings.AI.AddTransition*"></a>
+  <h4 id="Mannequin_Bindings_AI_AddTransition_Mannequin_Bindings_EAIState_Closure_" data-uid="Mannequin.Bindings.AI.AddTransition(Mannequin.Bindings.EAIState,Closure)">AddTransition(EAIState, Closure)</h4>
+  <div class="markdown level1 summary"><p>Check the environment and change AIStates if necessary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTransition(EAIState to, Closure transition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.EAIState.html">EAIState</a></td>
+        <td><span class="parametername">to</span></td>
+        <td><p>The target <a class="xref" href="Mannequin.Bindings.EAIState.html">EAIState</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Closure</span></td>
+        <td><span class="parametername">transition</span></td>
+        <td><p>void OnTransitionTo(<a class="xref" href="Mannequin.Bindings.EAIState.html">EAIState</a> from, <a class="xref" href="Mannequin.Bindings.JobResult.html">JobResult</a> previousJobResult)</p>
+<p>
+The function to call
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_AI_AttachToAgent_" data-uid="Mannequin.Bindings.AI.AttachToAgent*"></a>
+  <h4 id="Mannequin_Bindings_AI_AttachToAgent_Mannequin_Bindings_Living_" data-uid="Mannequin.Bindings.AI.AttachToAgent(Mannequin.Bindings.Living)">AttachToAgent(Living)</h4>
+  <div class="markdown level1 summary"><p>Attach this AI component to a <a class="xref" href="Mannequin.Bindings.Living.html">Living</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AttachToAgent(Living living)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Living.html">Living</a></td>
+        <td><span class="parametername">living</span></td>
+        <td><p>The <a class="xref" href="Mannequin.Bindings.Living.html">Living</a> to attach this AI component to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>&copy; 2020 <a href="https://www.anarkisgaming.com/">Anarkis Gaming</a>. All rights reserved. Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

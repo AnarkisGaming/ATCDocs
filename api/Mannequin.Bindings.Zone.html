@@ -1,0 +1,463 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Zone
+   - After the Collapse Modding Documentation</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Zone
+   ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/icon.png" height="48">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mannequin.Bindings.Zone">
+  
+  
+  <h1 id="Mannequin_Bindings_Zone" data-uid="Mannequin.Bindings.Zone" class="text-break">Class Zone
+  </h1>
+  <div class="markdown level0 summary"><p>In-game zones.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Zone</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Mannequin.Bindings.Killable.html">Killable</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mannequin.Bindings.html">Mannequin.Bindings</a></h6>
+  <h6><strong>Assembly</strong>: Collapse.dll</h6>
+  <h5 id="Mannequin_Bindings_Zone_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Zone : object, Killable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Mannequin_Bindings_Zone__ctor_" data-uid="Mannequin.Bindings.Zone.#ctor*"></a>
+  <h4 id="Mannequin_Bindings_Zone__ctor_Mannequin_Bindings_Scene_Mannequin_Bindings_Rectangle_Mannequin_Bindings_EZoneType_Mannequin_Bindings_Color_System_String_System_String_" data-uid="Mannequin.Bindings.Zone.#ctor(Mannequin.Bindings.Scene,Mannequin.Bindings.Rectangle,Mannequin.Bindings.EZoneType,Mannequin.Bindings.Color,System.String,System.String)">Zone(Scene, Rectangle, EZoneType, Color, String, String)</h4>
+  <div class="markdown level1 summary"><p>Create a Zone.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Zone(Scene scene, Rectangle atRectangle, EZoneType type, Color color, string name = &quot;Untitled&quot;, string description = &quot;No description&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Scene.html">Scene</a></td>
+        <td><span class="parametername">scene</span></td>
+        <td><p>The <a class="xref" href="Mannequin.Bindings.Scene.html">Scene</a> to place this Zone in</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Rectangle.html">Rectangle</a></td>
+        <td><span class="parametername">atRectangle</span></td>
+        <td><p>A <a class="xref" href="Mannequin.Bindings.Rectangle.html">Rectangle</a> that defines the area of this Zone</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.EZoneType.html">EZoneType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>This Zone's type (purpose)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>This Zone's color (default: <a class="xref" href="Mannequin.Bindings.Colors.html#Mannequin_Bindings_Colors_PURPLE">PURPLE</a>)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of this Zone (default: &quot;Untitled&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td><p>The description of this Zone (default: &quot;No description provided&quot;)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Mannequin_Bindings_Zone_Category_" data-uid="Mannequin.Bindings.Zone.Category*"></a>
+  <h4 id="Mannequin_Bindings_Zone_Category" data-uid="Mannequin.Bindings.Zone.Category">Category</h4>
+  <div class="markdown level1 summary"><p>What this Zone is used for</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EZoneType Category { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.EZoneType.html">EZoneType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Zone_Center_" data-uid="Mannequin.Bindings.Zone.Center*"></a>
+  <h4 id="Mannequin_Bindings_Zone_Center" data-uid="Mannequin.Bindings.Zone.Center">Center</h4>
+  <div class="markdown level1 summary"><p>The center point of this Zone.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point Center { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Point.html">Point</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Zone_Description_" data-uid="Mannequin.Bindings.Zone.Description*"></a>
+  <h4 id="Mannequin_Bindings_Zone_Description" data-uid="Mannequin.Bindings.Zone.Description">Description</h4>
+  <div class="markdown level1 summary"><p>A description of this Zone.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Zone_Location_" data-uid="Mannequin.Bindings.Zone.Location*"></a>
+  <h4 id="Mannequin_Bindings_Zone_Location" data-uid="Mannequin.Bindings.Zone.Location">Location</h4>
+  <div class="markdown level1 summary"><p>A rectangle representing this zone on the map</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rectangle Location { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Rectangle.html">Rectangle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Zone_Name_" data-uid="Mannequin.Bindings.Zone.Name*"></a>
+  <h4 id="Mannequin_Bindings_Zone_Name" data-uid="Mannequin.Bindings.Zone.Name">Name</h4>
+  <div class="markdown level1 summary"><p>The name of this Zone.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Zone_Scene_" data-uid="Mannequin.Bindings.Zone.Scene*"></a>
+  <h4 id="Mannequin_Bindings_Zone_Scene" data-uid="Mannequin.Bindings.Zone.Scene">Scene</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Mannequin.Bindings.Scene.html">Scene</a> this Zone is in</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Scene Scene { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Scene.html">Scene</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Mannequin_Bindings_Zone_GetClutter_" data-uid="Mannequin.Bindings.Zone.GetClutter*"></a>
+  <h4 id="Mannequin_Bindings_Zone_GetClutter_System_Boolean_" data-uid="Mannequin.Bindings.Zone.GetClutter(System.Boolean)">GetClutter(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Get all of the <a class="xref" href="Mannequin.Bindings.Clutter.html">Clutter</a> in this Zone</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Clutter&gt; GetClutter(bool shouldRefreshContent = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">shouldRefreshContent</span></td>
+        <td><p>Ignore the internal cache and get new results immediately</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Mannequin.Bindings.Clutter.html">Clutter</a>&gt;</td>
+        <td><p>All of the <a class="xref" href="Mannequin.Bindings.Clutter.html">Clutter</a> in this zone</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Zone_GetRandomTile_" data-uid="Mannequin.Bindings.Zone.GetRandomTile*"></a>
+  <h4 id="Mannequin_Bindings_Zone_GetRandomTile" data-uid="Mannequin.Bindings.Zone.GetRandomTile">GetRandomTile()</h4>
+  <div class="markdown level1 summary"><p>Get a random <a class="xref" href="Mannequin.Bindings.Tile.html">Tile</a> within this Zone</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tile GetRandomTile()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Tile.html">Tile</a></td>
+        <td><p>A random <a class="xref" href="Mannequin.Bindings.Tile.html">Tile</a> within this Zone</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Zone_GetTiles_" data-uid="Mannequin.Bindings.Zone.GetTiles*"></a>
+  <h4 id="Mannequin_Bindings_Zone_GetTiles" data-uid="Mannequin.Bindings.Zone.GetTiles">GetTiles()</h4>
+  <div class="markdown level1 summary"><p>Get all of the <a class="xref" href="Mannequin.Bindings.Tile.html">Tile</a>s in this Zone</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Tile&gt; GetTiles()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Mannequin.Bindings.Tile.html">Tile</a>&gt;</td>
+        <td><p>All of the <a class="xref" href="Mannequin.Bindings.Tile.html">Tile</a>s in this Zone</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Zone_Kill_" data-uid="Mannequin.Bindings.Zone.Kill*"></a>
+  <h4 id="Mannequin_Bindings_Zone_Kill" data-uid="Mannequin.Bindings.Zone.Kill">Kill()</h4>
+  <div class="markdown level1 summary"><p>Remove this Zone from the Scene</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Kill()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Mannequin.Bindings.Killable.html">Killable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>&copy; 2020 <a href="https://www.anarkisgaming.com/">Anarkis Gaming</a>. All rights reserved. Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

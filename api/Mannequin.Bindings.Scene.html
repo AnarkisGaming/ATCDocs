@@ -1,0 +1,617 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Scene
+   - After the Collapse Modding Documentation</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Scene
+   ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/icon.png" height="48">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mannequin.Bindings.Scene">
+  
+  
+  <h1 id="Mannequin_Bindings_Scene" data-uid="Mannequin.Bindings.Scene" class="text-break">Class Scene
+  </h1>
+  <div class="markdown level0 summary"><p>Create and manipulate Scenes.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Scene</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mannequin.Bindings.html">Mannequin.Bindings</a></h6>
+  <h6><strong>Assembly</strong>: Collapse.dll</h6>
+  <h5 id="Mannequin_Bindings_Scene_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Scene : object</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Mannequin_Bindings_Scene__ctor_" data-uid="Mannequin.Bindings.Scene.#ctor*"></a>
+  <h4 id="Mannequin_Bindings_Scene__ctor_Mannequin_Bindings_SceneOptions_" data-uid="Mannequin.Bindings.Scene.#ctor(Mannequin.Bindings.SceneOptions)">Scene(SceneOptions)</h4>
+  <div class="markdown level1 summary"><p>Create a Scene using the settings in SceneOpts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Scene(SceneOptions opts)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.SceneOptions.html">SceneOptions</a></td>
+        <td><span class="parametername">opts</span></td>
+        <td><p>Options for this Scene</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Scene__ctor_" data-uid="Mannequin.Bindings.Scene.#ctor*"></a>
+  <h4 id="Mannequin_Bindings_Scene__ctor_Mannequin_Bindings_SceneOptions_Closure_" data-uid="Mannequin.Bindings.Scene.#ctor(Mannequin.Bindings.SceneOptions,Closure)">Scene(SceneOptions, Closure)</h4>
+  <div class="markdown level1 summary"><p>Create a Scene with a Lua-based generator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Scene(SceneOptions opts, Closure generator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.SceneOptions.html">SceneOptions</a></td>
+        <td><span class="parametername">opts</span></td>
+        <td><p>The initial options for generating this scene</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Closure</span></td>
+        <td><span class="parametername">generator</span></td>
+        <td><p>A Lua closure that is passed the X position, the Y position of the current target, and a reference to the newly-created Scene. It expects a <a class="xref" href="Mannequin.Bindings.Tile.html">Tile</a> in return</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Mannequin_Bindings_Scene_Group_" data-uid="Mannequin.Bindings.Scene.Group*"></a>
+  <h4 id="Mannequin_Bindings_Scene_Group" data-uid="Mannequin.Bindings.Scene.Group">Group</h4>
+  <div class="markdown level1 summary"><p>Get the SceneGroup that this Scene belongs to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SceneGroup Group { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.SceneGroup.html">SceneGroup</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Scene_Height_" data-uid="Mannequin.Bindings.Scene.Height*"></a>
+  <h4 id="Mannequin_Bindings_Scene_Height" data-uid="Mannequin.Bindings.Scene.Height">Height</h4>
+  <div class="markdown level1 summary"><p>The height of the Scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Height { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Scene_IsGameScene_" data-uid="Mannequin.Bindings.Scene.IsGameScene*"></a>
+  <h4 id="Mannequin_Bindings_Scene_IsGameScene" data-uid="Mannequin.Bindings.Scene.IsGameScene">IsGameScene</h4>
+  <div class="markdown level1 summary"><p>Whether this is a game scene or not. Game scenes have zones and are generally part of scene groups, as opposed to world map scenes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGameScene { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Scene_Name_" data-uid="Mannequin.Bindings.Scene.Name*"></a>
+  <h4 id="Mannequin_Bindings_Scene_Name" data-uid="Mannequin.Bindings.Scene.Name">Name</h4>
+  <div class="markdown level1 summary"><p>The name of this Scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Scene_Width_" data-uid="Mannequin.Bindings.Scene.Width*"></a>
+  <h4 id="Mannequin_Bindings_Scene_Width" data-uid="Mannequin.Bindings.Scene.Width">Width</h4>
+  <div class="markdown level1 summary"><p>The width of the Scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Width { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Mannequin_Bindings_Scene_AddZone_" data-uid="Mannequin.Bindings.Scene.AddZone*"></a>
+  <h4 id="Mannequin_Bindings_Scene_AddZone_Mannequin_Bindings_Zone_" data-uid="Mannequin.Bindings.Scene.AddZone(Mannequin.Bindings.Zone)">AddZone(Zone)</h4>
+  <div class="markdown level1 summary"><p>Add a Zone to this Scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddZone(Zone zone)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Zone.html">Zone</a></td>
+        <td><span class="parametername">zone</span></td>
+        <td><p>The Zone to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Scene_GetAgents_" data-uid="Mannequin.Bindings.Scene.GetAgents*"></a>
+  <h4 id="Mannequin_Bindings_Scene_GetAgents" data-uid="Mannequin.Bindings.Scene.GetAgents">GetAgents()</h4>
+  <div class="markdown level1 summary"><p>Get all of the Agents in this scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Agent&gt; GetAgents()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Mannequin.Bindings.Agent.html">Agent</a>&gt;</td>
+        <td><p>All of the Agents in this scene.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Scene_GetTile_" data-uid="Mannequin.Bindings.Scene.GetTile*"></a>
+  <h4 id="Mannequin_Bindings_Scene_GetTile_Mannequin_Bindings_Point_" data-uid="Mannequin.Bindings.Scene.GetTile(Mannequin.Bindings.Point)">GetTile(Point)</h4>
+  <div class="markdown level1 summary"><p>Get a tile from a Scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tile GetTile(Point p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Point.html">Point</a></td>
+        <td><span class="parametername">p</span></td>
+        <td><p>Point on the map</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Tile.html">Tile</a></td>
+        <td><p>The Tile at that position</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Scene_GetTile_" data-uid="Mannequin.Bindings.Scene.GetTile*"></a>
+  <h4 id="Mannequin_Bindings_Scene_GetTile_System_Int32_System_Int32_" data-uid="Mannequin.Bindings.Scene.GetTile(System.Int32,System.Int32)">GetTile(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Get a tile from a Scene.</p>
+<p>
+Consider using GetTile(<a class="xref" href="Mannequin.Bindings.Point.html">Point</a>) instead.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tile GetTile(int x, int y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>X position</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Y position</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Tile.html">Tile</a></td>
+        <td><p>The Tile at that position</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Scene_GetZones_" data-uid="Mannequin.Bindings.Scene.GetZones*"></a>
+  <h4 id="Mannequin_Bindings_Scene_GetZones" data-uid="Mannequin.Bindings.Scene.GetZones">GetZones()</h4>
+  <div class="markdown level1 summary"><p>Get all of the Zones in this Scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Zone&gt; GetZones()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Mannequin.Bindings.Zone.html">Zone</a>&gt;</td>
+        <td><p>All of the Zones in this Scene.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Scene_Kill_" data-uid="Mannequin.Bindings.Scene.Kill*"></a>
+  <h4 id="Mannequin_Bindings_Scene_Kill" data-uid="Mannequin.Bindings.Scene.Kill">Kill()</h4>
+  <div class="markdown level1 summary"><p>Kill and dispose of this Scene. Will return to the main menu if there are no other Scenes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Kill()</code></pre>
+  </div>
+  
+  
+  <a id="Mannequin_Bindings_Scene_SetActive_" data-uid="Mannequin.Bindings.Scene.SetActive*"></a>
+  <h4 id="Mannequin_Bindings_Scene_SetActive" data-uid="Mannequin.Bindings.Scene.SetActive">SetActive()</h4>
+  <div class="markdown level1 summary"><p>Mark this Scene as the active Scene, i.e. the one the player is playing on</p>
+<p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetActive()</code></pre>
+  </div>
+  
+  
+  <a id="Mannequin_Bindings_Scene_SetTile_" data-uid="Mannequin.Bindings.Scene.SetTile*"></a>
+  <h4 id="Mannequin_Bindings_Scene_SetTile_Mannequin_Bindings_Point_Mannequin_Bindings_Tile_" data-uid="Mannequin.Bindings.Scene.SetTile(Mannequin.Bindings.Point,Mannequin.Bindings.Tile)">SetTile(Point, Tile)</h4>
+  <div class="markdown level1 summary"><p>Set a tile in a Scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTile(Point p, Tile t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Point.html">Point</a></td>
+        <td><span class="parametername">p</span></td>
+        <td><p>Point on the map grid</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Tile.html">Tile</a></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Tile to place</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Scene_SetTile_" data-uid="Mannequin.Bindings.Scene.SetTile*"></a>
+  <h4 id="Mannequin_Bindings_Scene_SetTile_System_Int32_System_Int32_Mannequin_Bindings_Tile_" data-uid="Mannequin.Bindings.Scene.SetTile(System.Int32,System.Int32,Mannequin.Bindings.Tile)">SetTile(Int32, Int32, Tile)</h4>
+  <div class="markdown level1 summary"><p>Set a tile in a Scene.</p>
+<p>
+Consider using SetTile(<a class="xref" href="Mannequin.Bindings.Point.html">Point</a>, <a class="xref" href="Mannequin.Bindings.Tile.html">Tile</a>) instead.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTile(int x, int y, Tile t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>X position on the grid</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Y position on the grid</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Tile.html">Tile</a></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Tile to place</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Scene_UpdateTiles_" data-uid="Mannequin.Bindings.Scene.UpdateTiles*"></a>
+  <h4 id="Mannequin_Bindings_Scene_UpdateTiles" data-uid="Mannequin.Bindings.Scene.UpdateTiles">UpdateTiles()</h4>
+  <div class="markdown level1 summary"><p>Update this Scene's tiles. Must be called or any changes won't show.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateTiles()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>&copy; 2020 <a href="https://www.anarkisgaming.com/">Anarkis Gaming</a>. All rights reserved. Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

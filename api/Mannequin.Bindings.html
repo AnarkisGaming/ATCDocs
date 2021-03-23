@@ -1,0 +1,537 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Mannequin.Bindings
+   - After the Collapse Modding Documentation</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Mannequin.Bindings
+   ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/icon.png" height="48">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mannequin.Bindings">
+  
+  <h1 id="Mannequin_Bindings" data-uid="Mannequin.Bindings" class="text-break">Namespace Mannequin.Bindings
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Mannequin.Bindings.Agent.html">Agent</a></h4>
+      <section><p>Base class for Agents, including Clutter and Living agents</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.AgentData.html">AgentData</a></h4>
+      <section><p>The data of an Agent. Changes are reflected immediately.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.AgentDeathInformation.html">AgentDeathInformation</a></h4>
+      <section><p>Death certificates for Agents</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.AI.html">AI</a></h4>
+      <section><p>
+Control <a class="xref" href="Mannequin.Bindings.Living.html">Living</a> AI from Lua.
+<p>Note: this is currently broken.</p>
+</p>
+<p>
+AIs within the Anarkis Gaming engine are finite state machines.
+</p>
+<p>
+Every game update call, <a class="xref" href="Mannequin.Bindings.AI.html#Mannequin_Bindings_AI_OnCycleStart">OnCycleStart</a> is called if functions are bound to it to determine whether the Action set for the Living&apos;s current <a class="xref" href="Mannequin.Bindings.EAIState.html">EAIState</a>, if any, should be called. In the game, Actions are generally interrupted by needs (e.g. combat).
+</p>
+<p>
+If the result of <a class="xref" href="Mannequin.Bindings.AI.html#Mannequin_Bindings_AI_OnCycleStart">OnCycleStart</a> is false (i.e. not interrupted), the Action is called that reflects the AI&apos;s current state (see <a class="xref" href="Mannequin.Bindings.AI.html#Mannequin_Bindings_AI_AddAction_Mannequin_Bindings_EAIState_Closure_">AddAction(EAIState, Closure)</a>).
+</p>
+<p>
+Then, the Transition function for the current <a class="xref" href="Mannequin.Bindings.EAIState.html">EAIState</a>, if any, is called (see <a class="xref" href="Mannequin.Bindings.AI.html#Mannequin_Bindings_AI_AddTransition_Mannequin_Bindings_EAIState_Closure_">AddTransition(EAIState, Closure)</a>). This is where you should check the environment and the result of the Action to determine whether you should switch states.
+</p>
+<p>
+Finally, <a class="xref" href="Mannequin.Bindings.AI.html#Mannequin_Bindings_AI_OnCycleEnd">OnCycleEnd</a> is called, if any functions are bound to it.
+</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Animation.html">Animation</a></h4>
+      <section><p>Handles animations</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Armor.html">Armor</a></h4>
+      <section><p>Equippable armor.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.AsyncOperation.html">AsyncOperation</a></h4>
+      <section><p>Represents an in-progress, cancellable operation.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.BodyDef.html">BodyDef</a></h4>
+      <section><p>Body parts and footprint data for a <a class="xref" href="Mannequin.Bindings.Living.html">Living</a></p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.BodyGraph.html">BodyGraph</a></h4>
+      <section><p>Agent body graphical component</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.BodyPart.html">BodyPart</a></h4>
+      <section><p>Agent body parts</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.BodyPartData.html">BodyPartData</a></h4>
+      <section><p>A body part that attaches to a Living.</p>
+<p>LivingBodyParts are equivalent to objects in BodyDef.Data</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Bullet.html">Bullet</a></h4>
+      <section><p>Spawned by <a class="xref" href="Mannequin.Bindings.Weapon.html">Weapon</a>s.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Clutter.html">Clutter</a></h4>
+      <section><p>Non-moving objects (i.e. walls, tables...). See data/clutter for a full list.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.ClutterData.html">ClutterData</a></h4>
+      <section><p>The data of a Clutter. Changes are reflected immediately.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Color.html">Color</a></h4>
+      <section><p>Represents a color in (R, G, B, A) format.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Colors.html">Colors</a></h4>
+      <section><p>Commonly-used colors.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Date.html">Date</a></h4>
+      <section><p>Represents a date and time.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Emote.html">Emote</a></h4>
+      <section><p>Graphical emoticons (i.e. speech bubbles)</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Equippable.html">Equippable</a></h4>
+      <section><p>Equippable items. Cannot be instantiated directly.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Event.html">Event</a></h4>
+      <section><p>Bind closures to in-game events.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.EventListener.html">EventListener</a></h4>
+      <section><p>Manage bound event callbacks from Lua.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Expedition.html">Expedition</a></h4>
+      <section><p>Class for interfacing with Expeditions</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.ExpeditionEvent.html">ExpeditionEvent</a></h4>
+      <section><p>Class for handling Expedition Events</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Faction.html">Faction</a></h4>
+      <section><p>Contains agents and determines relationships.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Factory.html">Factory</a></h4>
+      <section><p>Factory component for Clutter</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.FoodRecipe.html">FoodRecipe</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Mannequin.Bindings.Game.html">Game</a></h4>
+      <section><p>Adjust game-related settings.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.HTTP.html">HTTP</a></h4>
+      <section><p>Make HTTP requests. You must whitelist any hosts you plan to contact in mods/http-whitelist.txt.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Inventory.html">Inventory</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Mannequin.Bindings.InventoryItem.html">InventoryItem</a></h4>
+      <section><p>Represents an item in an inventory.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.IO.html">IO</a></h4>
+      <section><p>Save and load data.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Item.html">Item</a></h4>
+      <section><p>Represents in-game items.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.ItemFilter.html">ItemFilter</a></h4>
+      <section><p>Filter items</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Job.html">Job</a></h4>
+      <section><p>A job for a settler to complete.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Living.html">Living</a></h4>
+      <section><p>Living, moving agents (i.e. survivors, bandits, zombies, trade jeeps...)</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.LivingData.html">LivingData</a></h4>
+      <section><p>Data for NPCs and other &quot;living&quot; items (that move).</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.LivingEquipmentList.html">LivingEquipmentList</a></h4>
+      <section><p>Equipment data for a <a class="xref" href="Mannequin.Bindings.Living.html">Living</a></p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.LivingJobAptitude.html">LivingJobAptitude</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Mannequin.Bindings.LivingStats.html">LivingStats</a></h4>
+      <section><p>Stats of a <a class="xref" href="Mannequin.Bindings.AgentData.html">AgentData</a></p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Mannequin.html">Mannequin</a></h4>
+      <section><p>Base bindings for mods from Lua</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Mob.html">Mob</a></h4>
+      <section><p>Defines mobs that are spawned in a <a class="xref" href="Mannequin.Bindings.PointOfInterest.html">PointOfInterest</a></p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.NativeMod.html">NativeMod</a></h4>
+      <section><p>A mod loaded via the local mod directory. This is usually returned by <a class="xref" href="Mannequin.Bindings.Mannequin.html#Mannequin_Bindings_Mannequin_GetMod_System_String_">GetMod(String)</a></p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.PendingTimer.html">PendingTimer</a></h4>
+      <section><p>Timer representations. <a class="xref" href="Mannequin.Bindings.Timer.html">Timer</a></p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Point.html">Point</a></h4>
+      <section><p>A location.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.PointOfInterest.html">PointOfInterest</a></h4>
+      <section><p>Points of interest (used in procedural generation)</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.PositioningData.html">PositioningData</a></h4>
+      <section><p>Positioning data</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Recipe.html">Recipe</a></h4>
+      <section><p>Used in <a class="xref" href="Mannequin.Bindings.Factory.html">Factory</a> to determine outputs</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Rectangle.html">Rectangle</a></h4>
+      <section><p>Represents an area on a coordinate plane.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Scene.html">Scene</a></h4>
+      <section><p>Create and manipulate Scenes.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.SceneGroup.html">SceneGroup</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Mannequin.Bindings.SceneOptions.html">SceneOptions</a></h4>
+      <section><p>Specify options for Scene generation.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Song.html">Song</a></h4>
+      <section><p>A song that can be added to a <a class="xref" href="Mannequin.Bindings.Theme.html">Theme</a>.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Sound.html">Sound</a></h4>
+      <section><p>A queueable sound.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Steamworks.html">Steamworks</a></h4>
+      <section><p>Steamworks functions.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.SteamworksMod.html">SteamworksMod</a></h4>
+      <section><p>A mod loaded via the Steam Workshop. This is usually returned by <see cref="!:Steamworks.GetMod(uint)"></see></p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.SteamworksPersona.html">SteamworksPersona</a></h4>
+      <section><p>Persona information for a player.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.SubClutter.html">SubClutter</a></h4>
+      <section><p>Define Clutter items that also spawn when a this is built during procedural generation (i.e. a table and chairs, etc)</p>
+<p>See pcg_tableandchairs, pcg_bedandshelf</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Tech.html">Tech</a></h4>
+      <section><p>Technology tree items</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Texture.html">Texture</a></h4>
+      <section><p>Drawable textures</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.TextureDrawController.html">TextureDrawController</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Mannequin.Bindings.Theme.html">Theme</a></h4>
+      <section><p>A collection of ambient sounds and/or music to play.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Tile.html">Tile</a></h4>
+      <section><p>A floor tile in a Scene.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Timer.html">Timer</a></h4>
+      <section><p>An interface for creating Timers.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Trait.html">Trait</a></h4>
+      <section><p>Traits that <a class="xref" href="Mannequin.Bindings.Living.html">Living</a>s can have</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.UI.html">UI</a></h4>
+      <section><p>Create and manipulate UI elements.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.UIButton.html">UIButton</a></h4>
+      <section><p>Binding to UI buttons</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.UICheckable.html">UICheckable</a></h4>
+      <section><p>A checkable <a class="xref" href="Mannequin.Bindings.UIComponent.html">UIComponent</a>.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.UICheckbox.html">UICheckbox</a></h4>
+      <section><p>Represents a checkbox.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.UIComponent.html">UIComponent</a></h4>
+      <section><p>Binding to UI components</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.UIHeader.html">UIHeader</a></h4>
+      <section><p>A <a class="xref" href="Mannequin.Bindings.UIParagraph.html">UIParagraph</a> that has larger text.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.UILabel.html">UILabel</a></h4>
+      <section><p>A <a class="xref" href="Mannequin.Bindings.UIParagraph.html">UIParagraph</a> with different styling.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.UIMulticolorParagraph.html">UIMulticolorParagraph</a></h4>
+      <section><p>A <a class="xref" href="Mannequin.Bindings.UIParagraph.html">UIParagraph</a> that can have color.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.UIOverlay.html">UIOverlay</a></h4>
+      <section><p>Controls the game's overlay and some UI panels.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.UIPanel.html">UIPanel</a></h4>
+      <section><p>A handle to an open UI panel.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.UIPanelListItem.html">UIPanelListItem</a></h4>
+      <section><p>An panel list item. Usually used for showcasing items, but has other uses, i.e. when a Texture should be supplied in addition to a list item.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.UIParagraph.html">UIParagraph</a></h4>
+      <section><p>Represents a paragraph of text.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.UIProgressBar.html">UIProgressBar</a></h4>
+      <section><p>A bar that fills from left to right.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.UIRadioButton.html">UIRadioButton</a></h4>
+      <section><p>Represents a radio button.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.UIRoot.html">UIRoot</a></h4>
+      <section><p>The UI root. All UI elements are attached to it either directly or through descendants.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.UISelectList.html">UISelectList</a></h4>
+      <section><p>A dropdown list.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.UISlider.html">UISlider</a></h4>
+      <section><p>Components that have a minimum and maximum value.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Vector.html">Vector</a></h4>
+      <section><p>Defines a vector with two components.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Wall.html">Wall</a></h4>
+      <section><p>Buildable walls.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.WallData.html">WallData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Mannequin.Bindings.Weapon.html">Weapon</a></h4>
+      <section><p>Equippable, drawable <a class="xref" href="Mannequin.Bindings.Item.html">Item</a>.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Zone.html">Zone</a></h4>
+      <section><p>In-game zones.</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="Mannequin.Bindings.IMannequinMod.html">IMannequinMod</a></h4>
+      <section><p>The parent interface to all Mannequin mods.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.Killable.html">Killable</a></h4>
+      <section></section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="Mannequin.Bindings.EAIState.html">EAIState</a></h4>
+      <section><p><a class="xref" href="Mannequin.Bindings.AI.html">AI</a> states</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.EAnimationType.html">EAnimationType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Mannequin.Bindings.EBodyPartType.html">EBodyPartType</a></h4>
+      <section><p>The type of a <a class="xref" href="Mannequin.Bindings.BodyPartData.html">BodyPartData</a></p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.EBodyType.html">EBodyType</a></h4>
+      <section><p>Body type of a <a class="xref" href="Mannequin.Bindings.LivingData.html">LivingData</a></p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.EBuildingPositioning.html">EBuildingPositioning</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Mannequin.Bindings.EBuildingType.html">EBuildingType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Mannequin.Bindings.EBuildRotation.html">EBuildRotation</a></h4>
+      <section><p>Clutter item rotation availability</p>
+<p><a class="xref" href="Mannequin.Bindings.ClutterData.html#Mannequin_Bindings_ClutterData_RotateUI">RotateUI</a></p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.EClutterType.html">EClutterType</a></h4>
+      <section><p>The type of Clutter this is.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.EDamageLevel.html">EDamageLevel</a></h4>
+      <section><p><a class="xref" href="Mannequin.Bindings.Wall.html">Wall</a> damage level</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.EDeathReason.html">EDeathReason</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Mannequin.Bindings.EDiplomacyAction.html">EDiplomacyAction</a></h4>
+      <section><p>Potential actions that can be conducted from the Diplomacy screen</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.EEquipSlot.html">EEquipSlot</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Mannequin.Bindings.EExpeditionEventEffect.html">EExpeditionEventEffect</a></h4>
+      <section><p>Possible effects of going on an <a class="xref" href="Mannequin.Bindings.ExpeditionEvent.html">ExpeditionEvent</a>.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.EFactionRelationship.html">EFactionRelationship</a></h4>
+      <section><p>An enum describing the relationship with different factions.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.EFactionType.html">EFactionType</a></h4>
+      <section><p>An enum describing faction types.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.EGameActivity.html">EGameActivity</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Mannequin.Bindings.EGameStatus.html">EGameStatus</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Mannequin.Bindings.EIngredientType.html">EIngredientType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Mannequin.Bindings.EIntegrityStrength.html">EIntegrityStrength</a></h4>
+      <section><p>How strong an Agent is against damage, or how powerful an attack is.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.EIOContext.html">EIOContext</a></h4>
+      <section><p>IO contexts to be used with IO.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.EItemTag.html">EItemTag</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Mannequin.Bindings.EItemType.html">EItemType</a></h4>
+      <section><p>Item types</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.EJobResult.html">EJobResult</a></h4>
+      <section><p>The result/status of a <a class="xref" href="Mannequin.Bindings.Job.html">Job</a>.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.ELayer.html">ELayer</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Mannequin.Bindings.ELivingAI.html">ELivingAI</a></h4>
+      <section><p>Living AI types</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.ELivingCategory.html">ELivingCategory</a></h4>
+      <section><p>What is this Living?</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.ELivingNeed.html">ELivingNeed</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Mannequin.Bindings.ELocation.html">ELocation</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Mannequin.Bindings.EMapArchetype.html">EMapArchetype</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Mannequin.Bindings.EModSource.html">EModSource</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Mannequin.Bindings.EParticleEffectType.html">EParticleEffectType</a></h4>
+      <section><p>Clutter particle effects</p>
+<p><a class="xref" href="Mannequin.Bindings.ClutterData.html#Mannequin_Bindings_ClutterData_SpecialEffect">SpecialEffect</a></p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.ERoofStatus.html">ERoofStatus</a></h4>
+      <section><p>The status of a roof on a tile.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.ESceneType.html">ESceneType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Mannequin.Bindings.ESex.html">ESex</a></h4>
+      <section><p><a class="xref" href="Mannequin.Bindings.LivingData.html">LivingData</a> sex</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.ESkinColor.html">ESkinColor</a></h4>
+      <section><p>Skin color of <a class="xref" href="Mannequin.Bindings.LivingData.html">LivingData</a>.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.ESpawnAllowed.html">ESpawnAllowed</a></h4>
+      <section><p>Where a <a class="xref" href="Mannequin.Bindings.PointOfInterest.html">PointOfInterest</a> can spawn</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.EStatsChangeMode.html">EStatsChangeMode</a></h4>
+      <section><p>When an agent is generated: Set will use the stats from the file. SlightRandom will use the same stats and apply a slight randomization, or FullRandom which will generate stats going from 0 to 100.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.ESubClutterPositioning.html">ESubClutterPositioning</a></h4>
+      <section><p>Determines the positioning of sub-clutter.</p>
+<p><a class="xref" href="Mannequin.Bindings.SubClutter.html">SubClutter</a>
+<a class="xref" href="Mannequin.Bindings.Clutter.html">Clutter</a></p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.ETraitEffect.html">ETraitEffect</a></h4>
+      <section><p>The overall net effect of a <a class="xref" href="Mannequin.Bindings.Trait.html">Trait</a></p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.ETraitGivingMode.html">ETraitGivingMode</a></h4>
+      <section><p>When an agent is generated, you can use the Set of traits already in the file. Ask to generate traits FullRandom (job + optional mental trait + a few physical), which is good for humans. Or Ask for the generator not to add a &quot;Job&quot; type trait with NoJob (good for animals).</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.ETraitType.html">ETraitType</a></h4>
+      <section><p><a class="xref" href="Mannequin.Bindings.Trait.html">Trait</a> types.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.EUIAnchor.html">EUIAnchor</a></h4>
+      <section><p>An Anchor is a pre-defined position in parent entity that we use to position a child.
+For eample, we can use anchors to position an entity at the bottom-center point of its parent.
+Note: anchor affect both the position relative to parent and also the offset origin point of the entity.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.EUndergroundType.html">EUndergroundType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Mannequin.Bindings.Events.html">Events</a></h4>
+      <section><p>Events the game can fire. Only used for documentation purposes.</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.EWeaponDamageType.html">EWeaponDamageType</a></h4>
+      <section><p>Type of damage inflicted when hit with a weapon</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.EWeaponType.html">EWeaponType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Mannequin.Bindings.ExpeditionLength.html">ExpeditionLength</a></h4>
+      <section><p>The length of an <a class="xref" href="Mannequin.Bindings.Expedition.html">Expedition</a></p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.ExpeditionState.html">ExpeditionState</a></h4>
+      <section><p>The status of an <a class="xref" href="Mannequin.Bindings.Expedition.html">Expedition</a></p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.EZoneType.html">EZoneType</a></h4>
+      <section><p>Zone types/purposes</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.JobResult.html">JobResult</a></h4>
+      <section><p><a class="xref" href="Mannequin.Bindings.AI.html">AI</a> Job results</p>
+</section>
+      <h4><a class="xref" href="Mannequin.Bindings.UIFontStyle.html">UIFontStyle</a></h4>
+      <section><p>The font style of text components.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>&copy; 2020 <a href="https://www.anarkisgaming.com/">Anarkis Gaming</a>. All rights reserved. Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

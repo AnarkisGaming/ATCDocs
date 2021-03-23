@@ -1,0 +1,646 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Living
+   - After the Collapse Modding Documentation</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Living
+   ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/icon.png" height="48">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mannequin.Bindings.Living">
+  
+  
+  <h1 id="Mannequin_Bindings_Living" data-uid="Mannequin.Bindings.Living" class="text-break">Class Living
+  </h1>
+  <div class="markdown level0 summary"><p>Living, moving agents (i.e. survivors, bandits, zombies, trade jeeps...)</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Mannequin.Bindings.Agent.html">Agent</a></div>
+    <div class="level2"><span class="xref">Living</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Mannequin.Bindings.Killable.html">Killable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Agent.html#Mannequin_Bindings_Agent_Position">Agent.Position</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Agent.html#Mannequin_Bindings_Agent_CurrentTile">Agent.CurrentTile</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Agent.html#Mannequin_Bindings_Agent_GridPosition">Agent.GridPosition</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Agent.html#Mannequin_Bindings_Agent_IsLiving">Agent.IsLiving</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Agent.html#Mannequin_Bindings_Agent_IsClutter">Agent.IsClutter</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Agent.html#Mannequin_Bindings_Agent_IsBullet">Agent.IsBullet</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Agent.html#Mannequin_Bindings_Agent_IsWall">Agent.IsWall</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Agent.html#Mannequin_Bindings_Agent_Name">Agent.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Agent.html#Mannequin_Bindings_Agent_Health">Agent.Health</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Agent.html#Mannequin_Bindings_Agent_MaxHealth">Agent.MaxHealth</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Agent.html#Mannequin_Bindings_Agent_Visible">Agent.Visible</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Agent.html#Mannequin_Bindings_Agent_Faction">Agent.Faction</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Agent.html#Mannequin_Bindings_Agent_Kill">Agent.Kill()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Agent.html#Mannequin_Bindings_Agent_Damage_Mannequin_Bindings_Agent_System_Int32_System_Boolean_Mannequin_Bindings_EWeaponDamageType_Mannequin_Bindings_EIntegrityStrength_">Agent.Damage(Agent, Int32, Boolean, EWeaponDamageType, EIntegrityStrength)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mannequin.Bindings.Agent.html#Mannequin_Bindings_Agent_Scene">Agent.Scene</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mannequin.Bindings.html">Mannequin.Bindings</a></h6>
+  <h6><strong>Assembly</strong>: Collapse.dll</h6>
+  <h5 id="Mannequin_Bindings_Living_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Living : Agent, Killable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Mannequin_Bindings_Living__ctor_" data-uid="Mannequin.Bindings.Living.#ctor*"></a>
+  <h4 id="Mannequin_Bindings_Living__ctor_Mannequin_Bindings_LivingData_Mannequin_Bindings_Faction_Mannequin_Bindings_Point_Mannequin_Bindings_Scene_" data-uid="Mannequin.Bindings.Living.#ctor(Mannequin.Bindings.LivingData,Mannequin.Bindings.Faction,Mannequin.Bindings.Point,Mannequin.Bindings.Scene)">Living(LivingData, Faction, Point, Scene)</h4>
+  <div class="markdown level1 summary"><p>Create a mobile, living agent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Living(LivingData data, Faction faction, Point position = null, Scene scene = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.LivingData.html">LivingData</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td><p>The Faction that this Living belongs to (default: player)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Point.html">Point</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>The point to place this Living at (default: 0, 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Scene.html">Scene</a></td>
+        <td><span class="parametername">scene</span></td>
+        <td><p>The Scene to place this Living in (default: current scene)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Living__ctor_" data-uid="Mannequin.Bindings.Living.#ctor*"></a>
+  <h4 id="Mannequin_Bindings_Living__ctor_System_String_Mannequin_Bindings_Faction_Mannequin_Bindings_Point_Mannequin_Bindings_Scene_" data-uid="Mannequin.Bindings.Living.#ctor(System.String,Mannequin.Bindings.Faction,Mannequin.Bindings.Point,Mannequin.Bindings.Scene)">Living(String, Faction, Point, Scene)</h4>
+  <div class="markdown level1 summary"><p>Create a mobile, living agent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Living(string baseData, Faction faction, Point position = null, Scene scene = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">baseData</span></td>
+        <td><p>A template for the creation of this Humanoid (see data/npc)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td><p>The Faction that this Humanoid belongs to (default: player)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Point.html">Point</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>The point to place this Humanoid at (default: 0, 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Scene.html">Scene</a></td>
+        <td><span class="parametername">scene</span></td>
+        <td><p>The Scene to place this Humanoid in (default: current scene)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Mannequin_Bindings_Living_AI_" data-uid="Mannequin.Bindings.Living.AI*"></a>
+  <h4 id="Mannequin_Bindings_Living_AI" data-uid="Mannequin.Bindings.Living.AI">AI</h4>
+  <div class="markdown level1 summary"><p>This Living's current AI</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AI AI { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.AI.html">AI</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Living_Body_" data-uid="Mannequin.Bindings.Living.Body*"></a>
+  <h4 id="Mannequin_Bindings_Living_Body" data-uid="Mannequin.Bindings.Living.Body">Body</h4>
+  <div class="markdown level1 summary"><p>Get the body graph attached to this agent</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BodyGraph Body { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.BodyGraph.html">BodyGraph</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Living_CurrentAnimation_" data-uid="Mannequin.Bindings.Living.CurrentAnimation*"></a>
+  <h4 id="Mannequin_Bindings_Living_CurrentAnimation" data-uid="Mannequin.Bindings.Living.CurrentAnimation">CurrentAnimation</h4>
+  <div class="markdown level1 summary"><p>This Living's current <a class="xref" href="Mannequin.Bindings.EAnimationType.html">EAnimationType</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EAnimationType CurrentAnimation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.EAnimationType.html">EAnimationType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Living_Data_" data-uid="Mannequin.Bindings.Living.Data*"></a>
+  <h4 id="Mannequin_Bindings_Living_Data" data-uid="Mannequin.Bindings.Living.Data">Data</h4>
+  <div class="markdown level1 summary"><p>The data used to create and shape this Living.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LivingData Data { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.LivingData.html">LivingData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Living_EquippedWeapon_" data-uid="Mannequin.Bindings.Living.EquippedWeapon*"></a>
+  <h4 id="Mannequin_Bindings_Living_EquippedWeapon" data-uid="Mannequin.Bindings.Living.EquippedWeapon">EquippedWeapon</h4>
+  <div class="markdown level1 summary"><p>Get this Living's currently-equipped <a class="xref" href="Mannequin.Bindings.Weapon.html">Weapon</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Weapon EquippedWeapon { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Weapon.html">Weapon</a></td>
+        <td><p>This Living's currently-equipped weapon, or <see cref="!:null"></see> if not equipped.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Living_Inventory_" data-uid="Mannequin.Bindings.Living.Inventory*"></a>
+  <h4 id="Mannequin_Bindings_Living_Inventory" data-uid="Mannequin.Bindings.Living.Inventory">Inventory</h4>
+  <div class="markdown level1 summary"><p>This Living's inventory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Inventory Inventory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Inventory.html">Inventory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Living_IsSickOrWounded_" data-uid="Mannequin.Bindings.Living.IsSickOrWounded*"></a>
+  <h4 id="Mannequin_Bindings_Living_IsSickOrWounded" data-uid="Mannequin.Bindings.Living.IsSickOrWounded">IsSickOrWounded</h4>
+  <div class="markdown level1 summary"><p>Whether this Living is sick or wounded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSickOrWounded { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Living_Traits_" data-uid="Mannequin.Bindings.Living.Traits*"></a>
+  <h4 id="Mannequin_Bindings_Living_Traits" data-uid="Mannequin.Bindings.Living.Traits">Traits</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Mannequin.Bindings.Trait.html">Trait</a> this Living has</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Trait&gt; Traits { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Mannequin.Bindings.Trait.html">Trait</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Mannequin_Bindings_Living_AddTrait_" data-uid="Mannequin.Bindings.Living.AddTrait*"></a>
+  <h4 id="Mannequin_Bindings_Living_AddTrait_Mannequin_Bindings_Trait_System_Double_System_Boolean_System_Boolean_" data-uid="Mannequin.Bindings.Living.AddTrait(Mannequin.Bindings.Trait,System.Double,System.Boolean,System.Boolean)">AddTrait(Trait, Double, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Add a <a class="xref" href="Mannequin.Bindings.Trait.html">Trait</a> to this Living</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTrait(Trait trait, double durationInHours = null, bool allowDuplicateTrait = false, bool replace = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Trait.html">Trait</a></td>
+        <td><span class="parametername">trait</span></td>
+        <td><p>The trait to add</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">durationInHours</span></td>
+        <td><p>The duration in hours (0 = permanent)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">allowDuplicateTrait</span></td>
+        <td><p>Add this trait again even if it already exists on the agent</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">replace</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_Living_ReloadWeapon_" data-uid="Mannequin.Bindings.Living.ReloadWeapon*"></a>
+  <h4 id="Mannequin_Bindings_Living_ReloadWeapon" data-uid="Mannequin.Bindings.Living.ReloadWeapon">ReloadWeapon()</h4>
+  <div class="markdown level1 summary"><p>Tell this Agent to reload the <a class="xref" href="Mannequin.Bindings.Weapon.html">Weapon</a> they are holding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReloadWeapon()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether the <a class="xref" href="Mannequin.Bindings.Weapon.html">Weapon</a> could be successfully reloaded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Mannequin_Bindings_Living_ReloadWeapon_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Mannequin.Bindings.Weapon.html#Mannequin_Bindings_Weapon_Reload_Mannequin_Bindings_Agent_">Reload(Agent)</a></div>
+      <div><a class="xref" href="Mannequin.Bindings.Living.html#Mannequin_Bindings_Living_ReloadWeapon_Mannequin_Bindings_Weapon_">ReloadWeapon(Weapon)</a></div>
+  </div>
+  
+  
+  <a id="Mannequin_Bindings_Living_ReloadWeapon_" data-uid="Mannequin.Bindings.Living.ReloadWeapon*"></a>
+  <h4 id="Mannequin_Bindings_Living_ReloadWeapon_Mannequin_Bindings_Weapon_" data-uid="Mannequin.Bindings.Living.ReloadWeapon(Mannequin.Bindings.Weapon)">ReloadWeapon(Weapon)</h4>
+  <div class="markdown level1 summary"><p>Tell this Agent to reload a <a class="xref" href="Mannequin.Bindings.Weapon.html">Weapon</a> they are holding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReloadWeapon(Weapon weapon)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Weapon.html">Weapon</a></td>
+        <td><span class="parametername">weapon</span></td>
+        <td><p>The weapon to reload.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether the <a class="xref" href="Mannequin.Bindings.Weapon.html">Weapon</a> could be successfully reloaded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Mannequin_Bindings_Living_ReloadWeapon_Mannequin_Bindings_Weapon__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Mannequin.Bindings.Weapon.html#Mannequin_Bindings_Weapon_Reload_Mannequin_Bindings_Agent_">Reload(Agent)</a></div>
+      <div><a class="xref" href="Mannequin.Bindings.Living.html#Mannequin_Bindings_Living_ReloadWeapon">ReloadWeapon()</a></div>
+  </div>
+  
+  
+  <a id="Mannequin_Bindings_Living_RemoveTrait_" data-uid="Mannequin.Bindings.Living.RemoveTrait*"></a>
+  <h4 id="Mannequin_Bindings_Living_RemoveTrait_Mannequin_Bindings_Trait_" data-uid="Mannequin.Bindings.Living.RemoveTrait(Mannequin.Bindings.Trait)">RemoveTrait(Trait)</h4>
+  <div class="markdown level1 summary"><p>Remove a <a class="xref" href="Mannequin.Bindings.Trait.html">Trait</a> from this Living</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveTrait(Trait trait)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Trait.html">Trait</a></td>
+        <td><span class="parametername">trait</span></td>
+        <td><p>The trait to remove</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Mannequin.Bindings.Killable.html">Killable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>&copy; 2020 <a href="https://www.anarkisgaming.com/">Anarkis Gaming</a>. All rights reserved. Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

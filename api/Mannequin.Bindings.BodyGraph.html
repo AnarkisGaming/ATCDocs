@@ -1,0 +1,508 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BodyGraph
+   - After the Collapse Modding Documentation</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BodyGraph
+   ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/icon.png" height="48">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mannequin.Bindings.BodyGraph">
+  
+  
+  <h1 id="Mannequin_Bindings_BodyGraph" data-uid="Mannequin.Bindings.BodyGraph" class="text-break">Class BodyGraph
+  </h1>
+  <div class="markdown level0 summary"><p>Agent body graphical component</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BodyGraph</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mannequin.Bindings.html">Mannequin.Bindings</a></h6>
+  <h6><strong>Assembly</strong>: Collapse.dll</h6>
+  <h5 id="Mannequin_Bindings_BodyGraph_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BodyGraph : object</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Mannequin_Bindings_BodyGraph_ForceHighLight_" data-uid="Mannequin.Bindings.BodyGraph.ForceHighLight*"></a>
+  <h4 id="Mannequin_Bindings_BodyGraph_ForceHighLight" data-uid="Mannequin.Bindings.BodyGraph.ForceHighLight">ForceHighLight</h4>
+  <div class="markdown level1 summary"><p>You probably don't need to use this. Used by the GUI to highlight clicked objects, or things marked to be recycled</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color ForceHighLight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_BodyGraph_Owner_" data-uid="Mannequin.Bindings.BodyGraph.Owner*"></a>
+  <h4 id="Mannequin_Bindings_BodyGraph_Owner" data-uid="Mannequin.Bindings.BodyGraph.Owner">Owner</h4>
+  <div class="markdown level1 summary"><p>The owner of this body graph</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Agent Owner { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Agent.html">Agent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_BodyGraph_Parts_" data-uid="Mannequin.Bindings.BodyGraph.Parts*"></a>
+  <h4 id="Mannequin_Bindings_BodyGraph_Parts" data-uid="Mannequin.Bindings.BodyGraph.Parts">Parts</h4>
+  <div class="markdown level1 summary"><p>A list of body parts attached to this body graph</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;BodyPart&gt; Parts { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Mannequin.Bindings.BodyPart.html">BodyPart</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_BodyGraph_Scale_" data-uid="Mannequin.Bindings.BodyGraph.Scale*"></a>
+  <h4 id="Mannequin_Bindings_BodyGraph_Scale" data-uid="Mannequin.Bindings.BodyGraph.Scale">Scale</h4>
+  <div class="markdown level1 summary"><p>Scale up/down this body graph by this %</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Scale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_BodyGraph_Texture_" data-uid="Mannequin.Bindings.BodyGraph.Texture*"></a>
+  <h4 id="Mannequin_Bindings_BodyGraph_Texture" data-uid="Mannequin.Bindings.BodyGraph.Texture">Texture</h4>
+  <div class="markdown level1 summary"><p>A texture containing this agent's body parts, etc.</p>
+<p><a class="xref" href="Mannequin.Bindings.BodyGraph.html#Mannequin_Bindings_BodyGraph_GenerateTexture">GenerateTexture()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture Texture { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Texture.html">Texture</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Mannequin_Bindings_BodyGraph_ForceAnimation_" data-uid="Mannequin.Bindings.BodyGraph.ForceAnimation*"></a>
+  <h4 id="Mannequin_Bindings_BodyGraph_ForceAnimation_Mannequin_Bindings_EAnimationType_" data-uid="Mannequin.Bindings.BodyGraph.ForceAnimation(Mannequin.Bindings.EAnimationType)">ForceAnimation(EAnimationType)</h4>
+  <div class="markdown level1 summary"><p>&quot;Force&quot; the body to play an animation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceAnimation(EAnimationType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.EAnimationType.html">EAnimationType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The animation type to play</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_BodyGraph_GenerateTexture_" data-uid="Mannequin.Bindings.BodyGraph.GenerateTexture*"></a>
+  <h4 id="Mannequin_Bindings_BodyGraph_GenerateTexture" data-uid="Mannequin.Bindings.BodyGraph.GenerateTexture">GenerateTexture()</h4>
+  <div class="markdown level1 summary"><p>Generate a Texture containing this agent's body parts, etc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture GenerateTexture()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Texture.html">Texture</a></td>
+        <td><p>The texture</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_BodyGraph_GetAbsoluteRectangle_" data-uid="Mannequin.Bindings.BodyGraph.GetAbsoluteRectangle*"></a>
+  <h4 id="Mannequin_Bindings_BodyGraph_GetAbsoluteRectangle" data-uid="Mannequin.Bindings.BodyGraph.GetAbsoluteRectangle">GetAbsoluteRectangle()</h4>
+  <div class="markdown level1 summary"><p>Used internally. Don't use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rectangle GetAbsoluteRectangle()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Rectangle.html">Rectangle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_BodyGraph_GetBodyPart_" data-uid="Mannequin.Bindings.BodyGraph.GetBodyPart*"></a>
+  <h4 id="Mannequin_Bindings_BodyGraph_GetBodyPart_Mannequin_Bindings_EBodyPartType_" data-uid="Mannequin.Bindings.BodyGraph.GetBodyPart(Mannequin.Bindings.EBodyPartType)">GetBodyPart(EBodyPartType)</h4>
+  <div class="markdown level1 summary"><p>Get a body part matching <code data-dev-comment-type="paramref" class="paramref">type</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BodyPart GetBodyPart(EBodyPartType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.EBodyPartType.html">EBodyPartType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type of body part to look for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.BodyPart.html">BodyPart</a></td>
+        <td><p>The first body part that matches, or null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_BodyGraph_Reset_" data-uid="Mannequin.Bindings.BodyGraph.Reset*"></a>
+  <h4 id="Mannequin_Bindings_BodyGraph_Reset_System_Int32_" data-uid="Mannequin.Bindings.BodyGraph.Reset(System.Int32)">Reset(Int32)</h4>
+  <div class="markdown level1 summary"><p>Reset the body to its initial state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset(int timeInMs = 200)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">timeInMs</span></td>
+        <td><p>The number of milliseconds to animate resetting for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_BodyGraph_SetOrigin_" data-uid="Mannequin.Bindings.BodyGraph.SetOrigin*"></a>
+  <h4 id="Mannequin_Bindings_BodyGraph_SetOrigin_Mannequin_Bindings_BodyPart_" data-uid="Mannequin.Bindings.BodyGraph.SetOrigin(Mannequin.Bindings.BodyPart)">SetOrigin(BodyPart)</h4>
+  <div class="markdown level1 summary"><p>Set the &quot;origin&quot; part of this body part - all other associated body parts will radiate from the &quot;origin&quot; part</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOrigin(BodyPart part)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.BodyPart.html">BodyPart</a></td>
+        <td><span class="parametername">part</span></td>
+        <td><p>The body part to set as the origin</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_BodyGraph_ShowEmote_" data-uid="Mannequin.Bindings.BodyGraph.ShowEmote*"></a>
+  <h4 id="Mannequin_Bindings_BodyGraph_ShowEmote_Mannequin_Bindings_Emote_System_Int32_" data-uid="Mannequin.Bindings.BodyGraph.ShowEmote(Mannequin.Bindings.Emote,System.Int32)">ShowEmote(Emote, Int32)</h4>
+  <div class="markdown level1 summary"><p>Show a <strike>bonus texture</strike> emote</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowEmote(Emote emote, int duration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.Emote.html">Emote</a></td>
+        <td><span class="parametername">emote</span></td>
+        <td><p>The emote to show</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td><p>How long to show the emote</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mannequin_Bindings_BodyGraph_ShowNeedEmote_" data-uid="Mannequin.Bindings.BodyGraph.ShowNeedEmote*"></a>
+  <h4 id="Mannequin_Bindings_BodyGraph_ShowNeedEmote_Mannequin_Bindings_ELivingNeed_" data-uid="Mannequin.Bindings.BodyGraph.ShowNeedEmote(Mannequin.Bindings.ELivingNeed)">ShowNeedEmote(ELivingNeed)</h4>
+  <div class="markdown level1 summary"><p>Show a <strike>bonus texture</strike> emote associated with a need</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowNeedEmote(ELivingNeed need)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mannequin.Bindings.ELivingNeed.html">ELivingNeed</a></td>
+        <td><span class="parametername">need</span></td>
+        <td><p>The need to show an emote for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>&copy; 2020 <a href="https://www.anarkisgaming.com/">Anarkis Gaming</a>. All rights reserved. Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
